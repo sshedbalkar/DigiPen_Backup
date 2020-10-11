@@ -1,0 +1,299 @@
+<root>
+  <items>
+    <item archetype="GOC_Type_Floor">
+      <Position>0.03,-227.58,188.73</Position>
+      <Scale>600.00,400.80,600.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_Wall">
+      <Position>-296.50,-30.10,186.86</Position>
+      <Scale>600.00,992.80,10.00</Scale>
+      <Orientation>0.0000,0.7071,0.0000,-0.7071</Orientation>
+    </item>
+    <item archetype="GOC_Type_Wall">
+      <Position>0.00,-329.90,483.01</Position>
+      <Scale>600.00,600.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,-1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_Wall">
+      <Position>295.10,-25.70,184.02</Position>
+      <Scale>600.00,1000.00,10.00</Scale>
+      <Orientation>0.0000,0.7071,0.0000,-0.7071</Orientation>
+    </item>
+    <item archetype="GOC_Type_Wall_Selectable">
+      <Position>-32.90,-51.20,487.11</Position>
+      <Scale>50.00,50.00,4.80</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_Floor">
+      <Position>0.00,-120.90,959.85</Position>
+      <Scale>300.00,186.80,300.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_Wall_Selectable">
+      <Position>-32.90,-51.20,810.96</Position>
+      <Scale>50.00,50.00,10.90</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_Wall">
+      <Position>-0.14,271.02,-114.51</Position>
+      <Scale>600.00,400.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,-1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_Wall">
+      <Position>-199.13,21.07,-114.64</Position>
+      <Scale>200.00,361.80,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,-1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_Wall">
+      <Position>185.02,22.30,-113.99</Position>
+      <Scale>207.10,360.70,6.50</Scale>
+      <Orientation>0.0000,0.0000,0.0000,-1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_Floor">
+      <Position>0.00,-30.00,-410.06</Position>
+      <Scale>600.00,5.00,600.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-89.00,-16.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-89.00,3.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-89.00,23.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-89.00,43.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-89.00,63.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-69.00,-16.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-69.00,3.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-69.00,23.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-69.00,43.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-69.00,63.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-49.00,-16.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-49.00,3.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-49.00,23.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-49.00,43.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-49.00,63.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-29.00,-16.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-29.00,3.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-29.00,23.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-29.00,43.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-29.00,63.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-9.00,-16.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-9.00,3.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-9.00,23.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-9.00,43.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>-9.00,63.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>11.00,-16.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>11.00,3.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>11.00,23.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>11.00,43.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>11.00,63.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>31.00,-16.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>31.00,3.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>31.00,23.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>31.00,43.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>31.00,63.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>51.00,-16.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>51.00,3.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>51.00,23.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>51.00,43.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>51.00,63.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>71.00,-16.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>71.00,3.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>71.00,23.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>71.00,43.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_CUBE">
+      <Position>71.00,63.50,-115.00</Position>
+      <Scale>20.00,20.00,10.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_SPHERE">
+      <Position>80.71,-14.98,378.55</Position>
+      <Scale>25.00,25.00,25.00</Scale>
+      <Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+    </item>
+    <item archetype="GOC_Type_Button1">
+      <Position>191.07,-7.79,-114.62</Position>
+      <Scale>40.00,40.00,10.00</Scale>
+      <Orientation>0.0000,1.0000,0.0000,0.0000</Orientation>
+      <ObjectActivationId>0</ObjectActivationId>
+      <ActivatedBy>   0,   0,   0,   0</ActivatedBy>
+    </item>
+	<item archetype="GOC_Type_SCRIPT">
+		<Position>-12.00,0.00,-84.00</Position>
+	</item>
+  </items>
+</root>

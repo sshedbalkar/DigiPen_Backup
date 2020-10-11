@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0_engine">
+      <UniqueIdentifier>{b4bd48bf-f5a8-46d2-b7b2-014be82c4720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0_engine\Components">
+      <UniqueIdentifier>{2e6919ca-20f3-482d-b5c4-fdc90526dbe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2_HLSL">
+      <UniqueIdentifier>{eb23020f-9d90-49b2-b808-c14c7429611d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1_scripts">
+      <UniqueIdentifier>{4402a958-d5b5-48a6-9b84-08c7629d9e4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1_scripts\materials">
+      <UniqueIdentifier>{bc5fe742-b5c2-4bef-b1a0-4d07d346a534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1_scripts\levelGraphics">
+      <UniqueIdentifier>{6e4aa3b3-b0b2-490d-873c-f514ff58c96e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1_scripts\general">
+      <UniqueIdentifier>{252074d8-b11b-40f9-9e36-ce5d2dd901c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2_HLSL\postprocesses">
+      <UniqueIdentifier>{ada02076-51d7-4c06-95fd-876d0666bbc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2_HLSL\utilities">
+      <UniqueIdentifier>{e3a0355e-6313-4798-9e4e-713419a2a8e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0_engine\D3D">
+      <UniqueIdentifier>{e41321ee-5416-4ad7-9ae6-66a15bf58916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0_engine\luaGlue">
+      <UniqueIdentifier>{0b72fcbb-466c-46c8-82ef-68293dbdf617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0_engine\core">
+      <UniqueIdentifier>{4a59d01c-e82c-4cff-9fff-2782ace4c64a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2_HLSL\directCompute">
+      <UniqueIdentifier>{27c761c9-2f00-4834-82a0-bdbc245d8cf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0_engine\subsystems">
+      <UniqueIdentifier>{55abee9b-bb60-4eb1-861c-3ba31c977740}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0_engine\subsystems\font">
+      <UniqueIdentifier>{97c0e4b1-695f-4b88-b0d7-da9ee481067b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0_engine\subsystems\effect">
+      <UniqueIdentifier>{0e88ff24-4923-4b05-90c9-c928cf1e1985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0_engine\subsystems\material">
+      <UniqueIdentifier>{84a7ec49-aedb-4492-8b5d-17dc8074ec9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0_engine\subsystems\Model">
+      <UniqueIdentifier>{87e853f3-95f0-488f-a76c-be265e987880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0_engine\renderer">
+      <UniqueIdentifier>{1eb7ea7e-2520-4358-81c0-a9d9aac513d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2_HLSL\streamoutput">
+      <UniqueIdentifier>{b12e6c0a-0540-44a6-9c95-df8b8ce2a4f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0_engine\terrain">
+      <UniqueIdentifier>{cea7a610-8481-4ab3-af2b-e466ad204db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1_scripts\debug">
+      <UniqueIdentifier>{234f4c70-32ab-4c6d-ae10-2d1059aec06c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Shaders\debugcube.fx">
+      <Filter>2_HLSL</Filter>
+    </None>
+    <None Include="..\Shaders\sprite.fx">
+      <Filter>2_HLSL</Filter>
+    </None>
+    <None Include="..\Scripts\materials\gui.lua">
+      <Filter>1_scripts\materials</Filter>
+    </None>
+    <None Include="..\Scripts\assets.lua">
+      <Filter>1_scripts\general</Filter>
+    </None>
+    <None Include="..\Shaders\fxaa.fx">
+      <Filter>2_HLSL\postprocesses</Filter>
+    </None>
+    <None Include="..\Shaders\Fxaa3_11.fxh">
+      <Filter>2_HLSL\postprocesses</Filter>
+    </None>
+    <None Include="..\Shaders\deferredPass.fx">
+      <Filter>2_HLSL\postprocesses</Filter>
+    </None>
+    <None Include="..\Scripts\materials\testModel.lua">
+      <Filter>1_scripts\materials</Filter>
+    </None>
+    <None Include="..\Scripts\pipeline.lua">
+      <Filter>1_scripts\levelGraphics</Filter>
+    </None>
+    <None Include="..\Scripts\materials\Model.lua">
+      <Filter>1_scripts\materials</Filter>
+    </None>
+    <None Include="..\Scripts\materials\light.lua">
+      <Filter>1_scripts\materials</Filter>
+    </None>
+    <None Include="..\Scripts\graphicsUtility.lua">
+      <Filter>1_scripts\general</Filter>
+    </None>
+    <None Include="..\Shaders\conversions.fxh">
+      <Filter>2_HLSL\utilities</Filter>
+    </None>
+    <None Include="..\Shaders\Model.fx">
+      <Filter>2_HLSL</Filter>
+    </None>
+    <None Include="..\Shaders\modelDepth.fx">
+      <Filter>2_HLSL</Filter>
+    </None>
+    <None Include="..\Shaders\testCS.fx">
+      <Filter>2_HLSL\directCompute</Filter>
+    </None>
+    <None Include="..\Shaders\testSO.fx">
+      <Filter>2_HLSL\streamoutput</Filter>
+    </None>
+    <None Include="..\Shaders\testD.fx">
+      <Filter>2_HLSL\streamoutput</Filter>
+    </None>
+    <None Include="..\Shaders\heightmappedMesh.fx">
+      <Filter>2_HLSL</Filter>
+    </None>
+    <None Include="..\Scripts\materials\heightmappedMesh.lua">
+      <Filter>1_scripts\materials</Filter>
+    </None>
+    <None Include="..\Scripts\materials\sky.lua">
+      <Filter>1_scripts\materials</Filter>
+    </None>
+    <None Include="..\Shaders\sky.fx">
+      <Filter>2_HLSL</Filter>
+    </None>
+    <None Include="..\Shaders\hdr.fx">
+      <Filter>2_HLSL\postprocesses</Filter>
+    </None>
+    <None Include="..\Shaders\debug2d.fx">
+      <Filter>2_HLSL</Filter>
+    </None>
+    <None Include="..\Scripts\materials\debugMaterial.lua">
+      <Filter>1_scripts\debug</Filter>
+    </None>
+    <None Include="..\Scripts\materials\debug2d.lua">
+      <Filter>1_scripts\debug</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Graphics\graphics.cpp">
+      <Filter>0_engine\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Graphics\d3dmanager.cpp">
+      <Filter>0_engine\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Graphics\graphicsGlue.cpp">
+      <Filter>0_engine\luaGlue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Graphics\material.cpp">
+      <Filter>0_engine\subsystems\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Graphics\GraphicsObject.cpp">
+      <Filter>0_engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Graphics\AnimationController.cpp">
+      <Filter>0_engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Graphics\DXObject.cpp">
+      <Filter>0_engine\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Graphics\font.cpp">
+      <Filter>0_engine\subsystems\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Graphics\animation.cpp">
+      <Filter>0_engine\subsystems\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Graphics\effect.cpp">
+      <Filter>0_engine\subsystems\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Graphics\renderer.cpp">
+      <Filter>0_engine\renderer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\Graphics\graphics.h">
+      <Filter>0_engine\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Graphics\d3dmanager.h">
+      <Filter>0_engine\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Graphics\graphicsGlue.h">
+      <Filter>0_engine\luaGlue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Graphics\material.h">
+      <Filter>0_engine\subsystems\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Graphics\GraphicsObject.h">
+      <Filter>0_engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Graphics\ModelStructures.h">
+      <Filter>0_engine\subsystems\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Graphics\AnimationController.h">
+      <Filter>0_engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Graphics\deviceStates.h">
+      <Filter>0_engine\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Graphics\DXObject.h">
+      <Filter>0_engine\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Graphics\font.h">
+      <Filter>0_engine\subsystems\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Graphics\animation.h">
+      <Filter>0_engine\subsystems\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Graphics\effect.h">
+      <Filter>0_engine\subsystems\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Graphics\renderer.h">
+      <Filter>0_engine\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\terrain.h">
+      <Filter>0_engine\terrain</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

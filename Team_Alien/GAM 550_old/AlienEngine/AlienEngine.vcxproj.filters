@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="10_Utility">
+      <UniqueIdentifier>{dbf237ba-b0e3-471c-b25e-774a37321792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="00_BaseEngine\Factory">
+      <UniqueIdentifier>{0af72e60-de13-47fd-a5e1-1017105f3cd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Debug">
+      <UniqueIdentifier>{30094be6-eceb-4b2a-864d-42d858d330c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Composition">
+      <UniqueIdentifier>{a7dba8e0-0fd8-4fa7-9613-f29a30de89c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Headers">
+      <UniqueIdentifier>{7bef87bf-b547-4dba-979a-adf2d22820db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\File">
+      <UniqueIdentifier>{aa57226c-db28-40b0-8e4f-e966cb06514d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Serialization">
+      <UniqueIdentifier>{4a7e84df-f8a5-4078-9429-0a9750211162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Serialization\RapidXML">
+      <UniqueIdentifier>{ec9547c0-b641-42db-8f31-efc0a3bf6192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Engine">
+      <UniqueIdentifier>{ccce5645-1581-4759-880a-3a62b7e497be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Core">
+      <UniqueIdentifier>{704d4474-ffcd-413a-aba5-ce7fb93aa0fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems">
+      <UniqueIdentifier>{0f12c8ff-5932-4c5f-86b7-a66f2c817159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics">
+      <UniqueIdentifier>{e1bd7215-2044-4cc5-8a0c-babf0905569d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\Dynamics">
+      <UniqueIdentifier>{473c2692-accf-4b9f-a10b-e14a39c9d99e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\System">
+      <UniqueIdentifier>{db3ac90a-3b21-418f-90e1-ded5da255be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\Collision">
+      <UniqueIdentifier>{31a5ed66-d1d7-4f0d-bb79-000d554144e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Windows">
+      <UniqueIdentifier>{870d5bf9-68c7-4077-aba8-2bd27f85c1fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Sound">
+      <UniqueIdentifier>{95eb4883-9776-4d11-9958-c561459621e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_GameLogic">
+      <UniqueIdentifier>{9eb82ddb-3604-4b17-a8a0-4ccf2bb2c690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_Precompiled">
+      <UniqueIdentifier>{4a658feb-0655-4664-81bf-c9ce0f592a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08_Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="09_Objects">
+      <UniqueIdentifier>{e38dd620-87e5-4d0d-9e54-6037cfea4f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\LevelEditor">
+      <UniqueIdentifier>{a1860fa4-3f0f-4a29-a01a-b3e0802900f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\scriptEngine">
+      <UniqueIdentifier>{e4d47bee-040f-48b2-8cf6-6f6b14f71493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\scriptEngine\BasicGlues">
+      <UniqueIdentifier>{2b66b409-8aae-40c8-98d6-1c7e007ed758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="11_cmdprocess">
+      <UniqueIdentifier>{5e401e81-5a1c-41e0-a78a-d83420da322b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\BasicComponents">
+      <UniqueIdentifier>{427fe44d-5075-44ca-bc0f-a981f87adb06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\BasicComponents\Transform">
+      <UniqueIdentifier>{1ab5f843-f3e6-42e1-a3a9-a8206afaa8b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\BasicComponents\Text">
+      <UniqueIdentifier>{bc6be134-f3e9-4f3a-bdbb-7b328e179d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Resources">
+      <UniqueIdentifier>{a1b56cae-2e4a-492e-b921-32918a12f1bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\BasicComponents\Camera">
+      <UniqueIdentifier>{ae5740e3-830f-4c93-8c8f-d55e2cb86cc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\math">
+      <UniqueIdentifier>{56814f16-4a52-478b-8f85-5102465a8d4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\math\header files">
+      <UniqueIdentifier>{8aebc9bd-4ead-448a-9866-e22344c976ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\math\source files">
+      <UniqueIdentifier>{9bca4c08-6114-48d8-95b0-7aa88bcee551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\ParticlePhysics">
+      <UniqueIdentifier>{7283c82b-c2e9-44ce-b99a-d701513cd563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\RigidBodyPhysics">
+      <UniqueIdentifier>{2c8857ae-fcb8-44ce-be87-a00a544e823e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\ParticlePhysics\header files">
+      <UniqueIdentifier>{6dc629e1-b8a9-4b61-ae3a-c4e0969690f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\ParticlePhysics\source files">
+      <UniqueIdentifier>{719e26bf-a51f-446b-a1b7-2c3477fbc852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\RigidBodyPhysics\header files">
+      <UniqueIdentifier>{ca0e72f9-0dfa-49ab-91a8-15a466e9fad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\RigidBodyPhysics\source files">
+      <UniqueIdentifier>{b51f8bab-2e95-4dc3-bc9b-d1aa9f863344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04_editor">
+      <UniqueIdentifier>{2dc16099-02e3-4ef5-91f4-1f7a0cc58c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_scripts">
+      <UniqueIdentifier>{e08baf53-c61f-4035-b41a-9be318713277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_scripts\objectScript">
+      <UniqueIdentifier>{9a0cb6f0-1078-4e4d-ac40-95d830b45b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_scripts\essentials">
+      <UniqueIdentifier>{9776cb4e-91a2-4ad1-9ec9-f90520e9df83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_scripts\levelLogic">
+      <UniqueIdentifier>{47f23d52-4c68-49b2-aa2f-6763d818537c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04_editor\scripts">
+      <UniqueIdentifier>{60615ede-6ec7-4800-8c8e-b155732149ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04_editor\groupselection">
+      <UniqueIdentifier>{413641ce-76d2-44eb-9720-d8e45f972eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09_Objects\archetypes">
+      <UniqueIdentifier>{358863a8-d217-4050-9708-fba063241a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09_Objects\levelfiles">
+      <UniqueIdentifier>{ba54f28e-9348-4e6f-8772-ded2c8a64240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_GameLogic\logicHierarchy">
+      <UniqueIdentifier>{b62bdfd4-bf4c-4d72-a720-dae0fc8b53f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Physics.cpp">
+      <Filter>01_Systems\Physics\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Body.cpp">
+      <Filter>01_Systems\Physics\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Resolution.cpp">
+      <Filter>01_Systems\Physics\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Collision.cpp">
+      <Filter>01_Systems\Physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\WindowsSystem.cpp">
+      <Filter>01_Systems\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Precompiled.cpp">
+      <Filter>07_Precompiled</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameLogic.cpp">
+      <Filter>02_GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Composition.cpp">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core.cpp">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Factory.cpp">
+      <Filter>00_BaseEngine\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FilePath.cpp">
+      <Filter>00_BaseEngine\File</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TextSerialization.cpp">
+      <Filter>00_BaseEngine\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Transform.cpp">
+      <Filter>00_BaseEngine\BasicComponents\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="source\main.cpp">
+      <Filter>08_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="source\XMLSerialization.cpp">
+      <Filter>00_BaseEngine\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Utility.cpp">
+      <Filter>10_Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Archetype.cpp">
+      <Filter>00_BaseEngine\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Audio.cpp">
+      <Filter>01_Systems\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ComponentRegistration.cpp">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StoreMessage.cpp">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GSM.cpp">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LevelEditor.cpp">
+      <Filter>01_Systems\LevelEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scriptEngine.cpp">
+      <Filter>01_Systems\scriptEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scriptComponent.cpp">
+      <Filter>01_Systems\scriptEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BasicGlues.cpp">
+      <Filter>01_Systems\scriptEngine\BasicGlues</Filter>
+    </ClCompile>
+    <ClCompile Include="source\cmd\cmd.cpp">
+      <Filter>11_cmdprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="source\text.cpp">
+      <Filter>00_BaseEngine\BasicComponents\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PathHelper.cpp">
+      <Filter>10_Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="source\resources.cpp">
+      <Filter>01_Systems\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="source\camera.cpp">
+      <Filter>00_BaseEngine\BasicComponents\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Matrix3.cpp">
+      <Filter>01_Systems\Physics\math\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Matrix4.cpp">
+      <Filter>01_Systems\Physics\math\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Vector3.cpp">
+      <Filter>01_Systems\Physics\math\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Quaternion.cpp">
+      <Filter>01_Systems\Physics\math\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Particle.cpp">
+      <Filter>01_Systems\Physics\ParticlePhysics\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ParticleContacts.cpp">
+      <Filter>01_Systems\Physics\ParticlePhysics\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ParticleForceGenerator.cpp">
+      <Filter>01_Systems\Physics\ParticlePhysics\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ParticleLinks.cpp">
+      <Filter>01_Systems\Physics\ParticlePhysics\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ParticleWorld.cpp">
+      <Filter>01_Systems\Physics\ParticlePhysics\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Collisions.cpp">
+      <Filter>01_Systems\Physics\RigidBodyPhysics\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Contacts.cpp">
+      <Filter>01_Systems\Physics\RigidBodyPhysics\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ForceGenerator.cpp">
+      <Filter>01_Systems\Physics\RigidBodyPhysics\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RigidBody.cpp">
+      <Filter>01_Systems\Physics\RigidBodyPhysics\source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LoadLevelClass.cpp">
+      <Filter>00_BaseEngine\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\basicLevels.cpp">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\groupSelection.cpp">
+      <Filter>04_editor\groupselection</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameData.cpp">
+      <Filter>00_BaseEngine\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\luaLibrary.cpp">
+      <Filter>01_Systems\scriptEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\logicHierarchy.cpp">
+      <Filter>02_GameLogic\logicHierarchy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Physics.h">
+      <Filter>01_Systems\Physics\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Body.h">
+      <Filter>01_Systems\Physics\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Resolution.h">
+      <Filter>01_Systems\Physics\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Collision.h">
+      <Filter>01_Systems\Physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="source\WindowsSystem.h">
+      <Filter>01_Systems\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Precompiled.h">
+      <Filter>07_Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameLogic.h">
+      <Filter>02_GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Component.h">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ComponentCreator.h">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Composition.h">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core.h">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DebugDiagnostic.h">
+      <Filter>00_BaseEngine\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ComponentTypeIds.h">
+      <Filter>00_BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Engine.h">
+      <Filter>00_BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Message.h">
+      <Filter>00_BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System.h">
+      <Filter>00_BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Factory.h">
+      <Filter>00_BaseEngine\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FilePath.h">
+      <Filter>00_BaseEngine\File</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Serialization.h">
+      <Filter>00_BaseEngine\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TextSerialization.h">
+      <Filter>00_BaseEngine\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Transform.h">
+      <Filter>00_BaseEngine\BasicComponents\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Containers.h">
+      <Filter>00_BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ObjectLinkedList.h">
+      <Filter>00_BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\VMath.h">
+      <Filter>00_BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\WindowsIncludes.h">
+      <Filter>00_BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rapidxml.hpp">
+      <Filter>00_BaseEngine\Serialization\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rapidxml_iterators.hpp">
+      <Filter>00_BaseEngine\Serialization\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rapidxml_print.hpp">
+      <Filter>00_BaseEngine\Serialization\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rapidxml_utils.hpp">
+      <Filter>00_BaseEngine\Serialization\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="source\XMLSerialization.h">
+      <Filter>00_BaseEngine\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Utility.h">
+      <Filter>10_Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Archetype.h">
+      <Filter>00_BaseEngine\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="source\binaryIO.h">
+      <Filter>00_BaseEngine\File</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Audio.h">
+      <Filter>01_Systems\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ComponentRegistration.h">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StoreMessage.h">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GSM.h">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ILevel.h">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LevelEditor.h">
+      <Filter>01_Systems\LevelEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scriptEngine.h">
+      <Filter>01_Systems\scriptEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scriptComponent.h">
+      <Filter>01_Systems\scriptEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\lua.h">
+      <Filter>01_Systems\scriptEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BasicGlues.h">
+      <Filter>01_Systems\scriptEngine\BasicGlues</Filter>
+    </ClInclude>
+    <ClInclude Include="source\cmd\cmd.h">
+      <Filter>11_cmdprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="source\text.h">
+      <Filter>00_BaseEngine\BasicComponents\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PathHelper.h">
+      <Filter>10_Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="source\resources.h">
+      <Filter>01_Systems\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="source\camera.h">
+      <Filter>00_BaseEngine\BasicComponents\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DirectXIncludes.h">
+      <Filter>00_BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Matrix3.h">
+      <Filter>01_Systems\Physics\math\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Matrix4.h">
+      <Filter>01_Systems\Physics\math\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PhysicsMath.h">
+      <Filter>01_Systems\Physics\math\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Precision.h">
+      <Filter>01_Systems\Physics\math\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Vector3.h">
+      <Filter>01_Systems\Physics\math\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Quaternion.h">
+      <Filter>01_Systems\Physics\math\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Particle.h">
+      <Filter>01_Systems\Physics\ParticlePhysics\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ParticleContacts.h">
+      <Filter>01_Systems\Physics\ParticlePhysics\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ParticleForceGenerator.h">
+      <Filter>01_Systems\Physics\ParticlePhysics\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ParticleLinks.h">
+      <Filter>01_Systems\Physics\ParticlePhysics\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ParticleWorld.h">
+      <Filter>01_Systems\Physics\ParticlePhysics\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Collisions.h">
+      <Filter>01_Systems\Physics\RigidBodyPhysics\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Contacts.h">
+      <Filter>01_Systems\Physics\RigidBodyPhysics\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ForceGenerator.h">
+      <Filter>01_Systems\Physics\RigidBodyPhysics\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RigidBody.h">
+      <Filter>01_Systems\Physics\RigidBodyPhysics\header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LoadLevelClass.h">
+      <Filter>00_BaseEngine\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="source\basicLevels.h">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\groupSelection.h">
+      <Filter>04_editor\groupselection</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameData.h">
+      <Filter>00_BaseEngine\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="source\luaLibrary.h">
+      <Filter>01_Systems\scriptEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\logicHierarchy.h">
+      <Filter>02_GameLogic\logicHierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CompositionTypeIdsName.h">
+      <Filter>00_BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ComponentTypeIdsName.h">
+      <Filter>00_BaseEngine\Engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\textures\icon.ico" />
+    <None Include="Scripts\global.lua">
+      <Filter>03_scripts\essentials</Filter>
+    </None>
+    <None Include="Scripts\registration.lua">
+      <Filter>03_scripts\essentials</Filter>
+    </None>
+    <None Include="Scripts\constants.lua">
+      <Filter>03_scripts\essentials</Filter>
+    </None>
+    <None Include="Scripts\dclickesctoquit.lua">
+      <Filter>03_scripts\levelLogic</Filter>
+    </None>
+    <None Include="Scripts\fpstext.lua">
+      <Filter>03_scripts\levelLogic</Filter>
+    </None>
+    <None Include="Scripts\cmd.lua">
+      <Filter>04_editor\scripts</Filter>
+    </None>
+    <None Include="Scripts\mousectrlcamera.lua">
+      <Filter>04_editor\scripts</Filter>
+    </None>
+    <None Include="Scripts\dropmodels.lua">
+      <Filter>04_editor\scripts</Filter>
+    </None>
+    <None Include="Scripts\editor.lua">
+      <Filter>04_editor\scripts</Filter>
+    </None>
+    <None Include="Scripts\utility.lua">
+      <Filter>03_scripts\essentials</Filter>
+    </None>
+    <None Include="Scripts\levelinfo.lua">
+      <Filter>03_scripts\levelLogic</Filter>
+    </None>
+    <None Include="Scripts\groupSelection.lua">
+      <Filter>04_editor\scripts</Filter>
+    </None>
+    <None Include="Objects\Level_0.xml">
+      <Filter>09_Objects\levelfiles</Filter>
+    </None>
+    <None Include="Objects\arch_debugobjects.xml">
+      <Filter>09_Objects\archetypes</Filter>
+    </None>
+    <None Include="Objects\arch_levellogics.xml">
+      <Filter>09_Objects\archetypes</Filter>
+    </None>
+    <None Include="Objects\arch_testlevelobjects.xml">
+      <Filter>09_Objects\archetypes</Filter>
+    </None>
+    <None Include="Scripts\transformation.lua">
+      <Filter>04_editor\scripts</Filter>
+    </None>
+    <None Include="Scripts\controller.lua">
+      <Filter>03_scripts\objectScript</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AlienEngine.rc" />
+  </ItemGroup>
+</Project>

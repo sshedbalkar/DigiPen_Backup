@@ -1,0 +1,860 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="10_Utility">
+      <UniqueIdentifier>{dbf237ba-b0e3-471c-b25e-774a37321792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="00_BaseEngine\Factory">
+      <UniqueIdentifier>{0af72e60-de13-47fd-a5e1-1017105f3cd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Debug">
+      <UniqueIdentifier>{30094be6-eceb-4b2a-864d-42d858d330c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Transform">
+      <UniqueIdentifier>{1ab5f843-f3e6-42e1-a3a9-a8206afaa8b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Composition">
+      <UniqueIdentifier>{a7dba8e0-0fd8-4fa7-9613-f29a30de89c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Headers">
+      <UniqueIdentifier>{7bef87bf-b547-4dba-979a-adf2d22820db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\File">
+      <UniqueIdentifier>{aa57226c-db28-40b0-8e4f-e966cb06514d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Serialization">
+      <UniqueIdentifier>{4a7e84df-f8a5-4078-9429-0a9750211162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Serialization\RapidXML">
+      <UniqueIdentifier>{ec9547c0-b641-42db-8f31-efc0a3bf6192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Engine">
+      <UniqueIdentifier>{ccce5645-1581-4759-880a-3a62b7e497be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_BaseEngine\Core">
+      <UniqueIdentifier>{704d4474-ffcd-413a-aba5-ce7fb93aa0fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems">
+      <UniqueIdentifier>{0f12c8ff-5932-4c5f-86b7-a66f2c817159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics">
+      <UniqueIdentifier>{45915576-b611-40ff-a7a2-3edd5edee1c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\Components">
+      <UniqueIdentifier>{96d9a63f-68d1-4717-b791-2cc08b7a0bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\Utility">
+      <UniqueIdentifier>{b72234af-ac7d-4dd9-b7e5-8c542219e66b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\System">
+      <UniqueIdentifier>{d1acea69-6903-4682-8b19-0fbb175e2aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\shaders">
+      <UniqueIdentifier>{4146a716-884d-4e2a-aafd-b00783b53f97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\shaders\hlsl">
+      <UniqueIdentifier>{fb29f4d8-bb70-4368-92a2-811619924681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\shaders\hlsl\2DShaders">
+      <UniqueIdentifier>{c4d2e35c-fbd1-466e-b6b1-8954963e89b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\shaders\hlsl\3DShaders">
+      <UniqueIdentifier>{5e90c75e-f30b-4a55-9657-2c4eacf6ca9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\shaders\hlsl\PostProcessingShaders">
+      <UniqueIdentifier>{ad328cf8-96f4-471b-ad0e-12ae78e351b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\shaders\hlsl\StreamOutputShaders">
+      <UniqueIdentifier>{ba23130f-c320-45f9-8731-5627b9d0d836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\shaders\hlsl\particlesShaders">
+      <UniqueIdentifier>{e7d2175e-71cc-494e-b93f-4ba243b8f972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\shaders\hlsl\materialShaders">
+      <UniqueIdentifier>{77aa81b0-e65d-45b0-b992-31b68e9ecd83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\font&amp;text">
+      <UniqueIdentifier>{054f9748-2d82-4c2a-a180-2ad23ca2b849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\elements">
+      <UniqueIdentifier>{e9951aed-e235-4970-85e9-f19318adbd0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\Materials">
+      <UniqueIdentifier>{f6b6f07f-07cc-4c2b-ab33-ed3920c1c1c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\Materials\surface">
+      <UniqueIdentifier>{3a7881bd-8989-42f2-aafd-b28fbce71aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\Materials\box">
+      <UniqueIdentifier>{6a9a894a-adf1-4210-bf12-60c3ed33438e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\Assets">
+      <UniqueIdentifier>{a4c1da3c-95fd-4cd0-bc25-bbdbf18317c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\Assets\scenes">
+      <UniqueIdentifier>{957b7ecd-ed4b-48cc-b89c-6c9f4744705d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\Assets\md5">
+      <UniqueIdentifier>{bfcff63d-3ccd-44b8-8969-f9254c252767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\Assets\dae">
+      <UniqueIdentifier>{ad8be1a1-38ec-47b0-b452-37dc32c6b652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics">
+      <UniqueIdentifier>{e1bd7215-2044-4cc5-8a0c-babf0905569d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\Dynamics">
+      <UniqueIdentifier>{473c2692-accf-4b9f-a10b-e14a39c9d99e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\System">
+      <UniqueIdentifier>{db3ac90a-3b21-418f-90e1-ded5da255be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Physics\Collision">
+      <UniqueIdentifier>{31a5ed66-d1d7-4f0d-bb79-000d554144e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Windows">
+      <UniqueIdentifier>{870d5bf9-68c7-4077-aba8-2bd27f85c1fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Sound">
+      <UniqueIdentifier>{95eb4883-9776-4d11-9958-c561459621e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Menu">
+      <UniqueIdentifier>{20a70f98-995a-4339-b637-16e811fc8e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Menu\xml">
+      <UniqueIdentifier>{a33f3d8e-df0f-4f2e-aa9f-fd190a0ecadb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_GameLogic">
+      <UniqueIdentifier>{9eb82ddb-3604-4b17-a8a0-4ccf2bb2c690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Levels">
+      <UniqueIdentifier>{f869f90e-9578-4412-87be-1038551dcc2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04_Save/Load">
+      <UniqueIdentifier>{10b0997a-f862-4f42-8058-1213f6b62a2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05_AI">
+      <UniqueIdentifier>{09cd8535-c832-4cd9-846d-0b6514e0be77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06_script">
+      <UniqueIdentifier>{e08baf53-c61f-4035-b41a-9be318713277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06_script\component">
+      <UniqueIdentifier>{5aa9ba37-3acf-41a6-9c6a-1f4c3095e52a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06_script\graphicsLogics">
+      <UniqueIdentifier>{48d462e1-e114-4e69-a704-d25d717376f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06_script\registration">
+      <UniqueIdentifier>{02fb8c18-4f4a-4f7d-b627-adc901cd0fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_Precompiled">
+      <UniqueIdentifier>{4a658feb-0655-4664-81bf-c9ce0f592a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08_Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="09_Objects">
+      <UniqueIdentifier>{e38dd620-87e5-4d0d-9e54-6037cfea4f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\LevelEditor">
+      <UniqueIdentifier>{a1860fa4-3f0f-4a29-a01a-b3e0802900f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01_Systems\Graphics\particleSystems">
+      <UniqueIdentifier>{208d3da3-5fce-460e-82d5-bc0ef2729431}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Camera.cpp">
+      <Filter>01_Systems\Graphics\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sprite.cpp">
+      <Filter>01_Systems\Graphics\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Graphics.cpp">
+      <Filter>01_Systems\Graphics\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Physics.cpp">
+      <Filter>01_Systems\Physics\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Body.cpp">
+      <Filter>01_Systems\Physics\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Resolution.cpp">
+      <Filter>01_Systems\Physics\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Collision.cpp">
+      <Filter>01_Systems\Physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="source\WindowsSystem.cpp">
+      <Filter>01_Systems\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Precompiled.cpp">
+      <Filter>07_Precompiled</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameLogic.cpp">
+      <Filter>02_GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Composition.cpp">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core.cpp">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DebugDraw.cpp">
+      <Filter>00_BaseEngine\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Factory.cpp">
+      <Filter>00_BaseEngine\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FilePath.cpp">
+      <Filter>00_BaseEngine\File</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TextSerialization.cpp">
+      <Filter>00_BaseEngine\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Transform.cpp">
+      <Filter>00_BaseEngine\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="source\main.cpp">
+      <Filter>08_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="source\D3DManager.cpp">
+      <Filter>01_Systems\Graphics\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\shader.cpp">
+      <Filter>01_Systems\Graphics\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\XMLSerialization.cpp">
+      <Filter>00_BaseEngine\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Utility.cpp">
+      <Filter>10_Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Archetype.cpp">
+      <Filter>00_BaseEngine\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameData.cpp">
+      <Filter>02_GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DebugPrint.cpp">
+      <Filter>00_BaseEngine\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DebugTools.cpp">
+      <Filter>00_BaseEngine\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\font.cpp">
+      <Filter>01_Systems\Graphics\font&amp;text</Filter>
+    </ClCompile>
+    <ClCompile Include="source\renderTargetTexture.cpp">
+      <Filter>01_Systems\Graphics\System</Filter>
+    </ClCompile>
+    <ClCompile Include="source\debugGeometry.cpp">
+      <Filter>00_BaseEngine\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="source\colladaReader.cpp">
+      <Filter>01_Systems\Graphics\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Mesh.cpp">
+      <Filter>01_Systems\Graphics\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="source\animation.cpp">
+      <Filter>01_Systems\Graphics\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="source\meshInstance.cpp">
+      <Filter>01_Systems\Graphics\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="source\visualPlatform.cpp">
+      <Filter>01_Systems\Graphics\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="source\grass.cpp">
+      <Filter>01_Systems\Graphics\Materials\surface</Filter>
+    </ClCompile>
+    <ClCompile Include="source\texturedbox.cpp">
+      <Filter>01_Systems\Graphics\Materials\box</Filter>
+    </ClCompile>
+    <ClCompile Include="source\texture.cpp">
+      <Filter>01_Systems\Graphics\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Audio.cpp">
+      <Filter>01_Systems\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="source\particleEmitter.cpp">
+      <Filter>01_Systems\Graphics\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rays.cpp">
+      <Filter>02_GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\skyline.cpp">
+      <Filter>01_Systems\Graphics\Materials\box</Filter>
+    </ClCompile>
+    <ClCompile Include="source\InteractiveObjProperties.cpp">
+      <Filter>02_GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ParticleSystem.cpp">
+      <Filter>01_Systems\Graphics\particleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ComponentRegistration.cpp">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StoreMessage.cpp">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HeroProperties.cpp">
+      <Filter>02_GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PESquare.cpp">
+      <Filter>01_Systems\Graphics\particleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\water.cpp">
+      <Filter>01_Systems\Graphics\Materials\box</Filter>
+    </ClCompile>
+    <ClCompile Include="source\menuSystem.cpp">
+      <Filter>01_Systems\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LoadLevelClass.cpp">
+      <Filter>03_Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GSM.cpp">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BasicLevels.cpp">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Level_1.cpp">
+      <Filter>03_Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PEEnergyField.cpp">
+      <Filter>01_Systems\Graphics\particleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CameraControl.cpp">
+      <Filter>02_GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CheckPoints.cpp">
+      <Filter>04_Save/Load</Filter>
+    </ClCompile>
+    <ClCompile Include="source\AI_Type2.cpp">
+      <Filter>05_AI</Filter>
+    </ClCompile>
+    <ClCompile Include="source\AI_Type1.cpp">
+      <Filter>05_AI</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene.cpp">
+      <Filter>01_Systems\Graphics\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="source\basicMovementEffect.cpp">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\heroAnimationEffect.cpp">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\heroFacialEffect.cpp">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scriptManager.cpp">
+      <Filter>06_script\component</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scriptRegistrator.cpp">
+      <Filter>06_script\registration</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ActivateObject.cpp">
+      <Filter>02_GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PELaser.cpp">
+      <Filter>01_Systems\Graphics\particleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\spikes.cpp">
+      <Filter>01_Systems\Graphics\Materials\surface</Filter>
+    </ClCompile>
+    <ClCompile Include="source\enemyAnimationEffect.cpp">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\enemyFacialEffect.cpp">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\bossMovementEffect.cpp">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\bossAnimationEffect.cpp">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LevelEditor.cpp">
+      <Filter>01_Systems\LevelEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\bossFacialEffect.cpp">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PEClouds.cpp">
+      <Filter>01_Systems\Graphics\particleSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\rippleEffect.cpp">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\instructionLogic.cpp">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Level_2.cpp">
+      <Filter>03_Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="source\endGameActions.cpp">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Camera.h">
+      <Filter>01_Systems\Graphics\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Sprite.h">
+      <Filter>01_Systems\Graphics\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Graphics.h">
+      <Filter>01_Systems\Graphics\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DirectXIncludes.h">
+      <Filter>01_Systems\Graphics\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="source\VertexTypes.h">
+      <Filter>01_Systems\Graphics\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Physics.h">
+      <Filter>01_Systems\Physics\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Body.h">
+      <Filter>01_Systems\Physics\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Resolution.h">
+      <Filter>01_Systems\Physics\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Collision.h">
+      <Filter>01_Systems\Physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="source\WindowsSystem.h">
+      <Filter>01_Systems\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Precompiled.h">
+      <Filter>07_Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameLogic.h">
+      <Filter>02_GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Component.h">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ComponentCreator.h">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Composition.h">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core.h">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DebugDiagnostic.h">
+      <Filter>00_BaseEngine\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DebugDraw.h">
+      <Filter>00_BaseEngine\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ComponentTypeIds.h">
+      <Filter>00_BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Engine.h">
+      <Filter>00_BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Message.h">
+      <Filter>00_BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System.h">
+      <Filter>00_BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Factory.h">
+      <Filter>00_BaseEngine\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FilePath.h">
+      <Filter>00_BaseEngine\File</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Serialization.h">
+      <Filter>00_BaseEngine\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TextSerialization.h">
+      <Filter>00_BaseEngine\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Transform.h">
+      <Filter>00_BaseEngine\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Containers.h">
+      <Filter>00_BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ObjectLinkedList.h">
+      <Filter>00_BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\VMath.h">
+      <Filter>00_BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\WindowsIncludes.h">
+      <Filter>00_BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\D3DManager.h">
+      <Filter>01_Systems\Graphics\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shader.h">
+      <Filter>01_Systems\Graphics\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rapidxml.hpp">
+      <Filter>00_BaseEngine\Serialization\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rapidxml_iterators.hpp">
+      <Filter>00_BaseEngine\Serialization\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rapidxml_print.hpp">
+      <Filter>00_BaseEngine\Serialization\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rapidxml_utils.hpp">
+      <Filter>00_BaseEngine\Serialization\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="source\XMLSerialization.h">
+      <Filter>00_BaseEngine\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Utility.h">
+      <Filter>10_Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Archetype.h">
+      <Filter>00_BaseEngine\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameData.h">
+      <Filter>02_GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DebugPrint.h">
+      <Filter>00_BaseEngine\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DebugTools.h">
+      <Filter>00_BaseEngine\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\binaryIO.h">
+      <Filter>00_BaseEngine\File</Filter>
+    </ClInclude>
+    <ClInclude Include="source\font.h">
+      <Filter>01_Systems\Graphics\font&amp;text</Filter>
+    </ClInclude>
+    <ClInclude Include="source\text.h">
+      <Filter>01_Systems\Graphics\font&amp;text</Filter>
+    </ClInclude>
+    <ClInclude Include="source\renderTargetTexture.h">
+      <Filter>01_Systems\Graphics\System</Filter>
+    </ClInclude>
+    <ClInclude Include="source\material.h">
+      <Filter>01_Systems\Graphics\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="source\debugGeometry.h">
+      <Filter>00_BaseEngine\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="source\colladaReader.h">
+      <Filter>01_Systems\Graphics\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Mesh.h">
+      <Filter>01_Systems\Graphics\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="source\animation.h">
+      <Filter>01_Systems\Graphics\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MeshInstance.h">
+      <Filter>01_Systems\Graphics\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="source\visualPlatform.h">
+      <Filter>01_Systems\Graphics\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="source\grass.h">
+      <Filter>01_Systems\Graphics\Materials\surface</Filter>
+    </ClInclude>
+    <ClInclude Include="source\texturedbox.h">
+      <Filter>01_Systems\Graphics\Materials\box</Filter>
+    </ClInclude>
+    <ClInclude Include="source\texture.h">
+      <Filter>01_Systems\Graphics\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\Fxaa3_11.h">
+      <Filter>01_Systems\Graphics\shaders\hlsl\PostProcessingShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="source\particleEmitter.h">
+      <Filter>01_Systems\Graphics\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Audio.h">
+      <Filter>01_Systems\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene.h">
+      <Filter>01_Systems\Graphics\elements</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rays.h">
+      <Filter>02_GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\skyline.h">
+      <Filter>01_Systems\Graphics\Materials\box</Filter>
+    </ClInclude>
+    <ClInclude Include="source\InteractiveObjProperties.h">
+      <Filter>02_GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ParticleSystem.h">
+      <Filter>01_Systems\Graphics\particleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ComponentRegistration.h">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StoreMessage.h">
+      <Filter>00_BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HeroProperties.h">
+      <Filter>02_GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PESquare.h">
+      <Filter>01_Systems\Graphics\particleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\water.h">
+      <Filter>01_Systems\Graphics\Materials\box</Filter>
+    </ClInclude>
+    <ClInclude Include="source\menuSystem.h">
+      <Filter>01_Systems\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LoadLevelClass.h">
+      <Filter>03_Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GSM.h">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ILevel.h">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BasicLevels.h">
+      <Filter>00_BaseEngine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Level_1.h">
+      <Filter>03_Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PEEnergyField.h">
+      <Filter>01_Systems\Graphics\particleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CameraControl.h">
+      <Filter>02_GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CheckPoints.h">
+      <Filter>04_Save/Load</Filter>
+    </ClInclude>
+    <ClInclude Include="source\AI_Type1.h">
+      <Filter>05_AI</Filter>
+    </ClInclude>
+    <ClInclude Include="source\AI_Type2.h">
+      <Filter>05_AI</Filter>
+    </ClInclude>
+    <ClInclude Include="source\basicMovementEffect.h">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\heroAnimationEffect.h">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\heroFacialEffect.h">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scriptManager.h">
+      <Filter>06_script\component</Filter>
+    </ClInclude>
+    <ClInclude Include="source\script.h">
+      <Filter>06_script</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scriptRegistrator.h">
+      <Filter>06_script\registration</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scriptCreator.h">
+      <Filter>06_script\registration</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ActivateObject.h">
+      <Filter>02_GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PELaser.h">
+      <Filter>01_Systems\Graphics\particleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\spikes.h">
+      <Filter>01_Systems\Graphics\Materials\surface</Filter>
+    </ClInclude>
+    <ClInclude Include="source\enemyAnimationEffect.h">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\enemyFacialEffect.h">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\bossMovementEffect.h">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\bossAnimationEffect.h">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LevelEditor.h">
+      <Filter>01_Systems\LevelEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\bossFacialEffect.h">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PEClouds.h">
+      <Filter>01_Systems\Graphics\particleSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\rippleEffect.h">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\instructionLogic.h">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Level_2.h">
+      <Filter>03_Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="source\endGameActions.h">
+      <Filter>06_script\graphicsLogics</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>00_BaseEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\debugShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl</Filter>
+    </None>
+    <None Include="Objects\gameSettings.xml">
+      <Filter>09_Objects</Filter>
+    </None>
+    <None Include="Shaders\states.fxh">
+      <Filter>01_Systems\Graphics\shaders\hlsl</Filter>
+    </None>
+    <None Include="Objects\Level_0.xml">
+      <Filter>09_Objects</Filter>
+    </None>
+    <None Include="Assets\GraphicsAssets.xml">
+      <Filter>01_Systems\Graphics\Assets</Filter>
+    </None>
+    <None Include="Shaders\fontShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\2DShaders</Filter>
+    </None>
+    <None Include="Shaders\FXAAShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\PostProcessingShaders</Filter>
+    </None>
+    <None Include="Shaders\postProcessingShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\PostProcessingShaders</Filter>
+    </None>
+    <None Include="Shaders\MeshShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\3DShaders</Filter>
+    </None>
+    <None Include="Shaders\SpriteShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\3DShaders</Filter>
+    </None>
+    <None Include="Assets\scenes\sunny_land.xml">
+      <Filter>01_Systems\Graphics\Assets\scenes</Filter>
+    </None>
+    <None Include="Shaders\StaticMeshShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\3DShaders</Filter>
+    </None>
+    <None Include="Shaders\bloomPickShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\PostProcessingShaders</Filter>
+    </None>
+    <None Include="Shaders\bloomShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\PostProcessingShaders</Filter>
+    </None>
+    <None Include="Assets\models\hero.md5mesh">
+      <Filter>01_Systems\Graphics\Assets\md5</Filter>
+    </None>
+    <None Include="Assets\models\hero.walking.md5anim">
+      <Filter>01_Systems\Graphics\Assets\md5</Filter>
+    </None>
+    <None Include="Assets\models\hero.standing.md5anim">
+      <Filter>01_Systems\Graphics\Assets\md5</Filter>
+    </None>
+    <None Include="Shaders\advanceParticlesSquare.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\StreamOutputShaders</Filter>
+    </None>
+    <None Include="Shaders\blurShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\PostProcessingShaders</Filter>
+    </None>
+    <None Include="Assets\models\pillar.dae">
+      <Filter>01_Systems\Graphics\Assets\dae</Filter>
+    </None>
+    <None Include="Shaders\advanceParticlesEnergyField.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\StreamOutputShaders</Filter>
+    </None>
+    <None Include="Objects\SmartCamera.xml">
+      <Filter>09_Objects</Filter>
+    </None>
+    <None Include="Objects\CheckPoints.xml">
+      <Filter>09_Objects</Filter>
+    </None>
+    <None Include="Objects\pause_menu.xml">
+      <Filter>01_Systems\Menu\xml</Filter>
+    </None>
+    <None Include="Shaders\cursorShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\2DShaders</Filter>
+    </None>
+    <None Include="Shaders\menuShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\2DShaders</Filter>
+    </None>
+    <None Include="Shaders\advanceCursor.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\StreamOutputShaders</Filter>
+    </None>
+    <None Include="Shaders\advanceMenu.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\StreamOutputShaders</Filter>
+    </None>
+    <None Include="Shaders\particleShaderEnergyField.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\particlesShaders</Filter>
+    </None>
+    <None Include="Shaders\particleShaderSquare.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\particlesShaders</Filter>
+    </None>
+    <None Include="Shaders\waterShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\materialShaders</Filter>
+    </None>
+    <None Include="Shaders\texturedBoxShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\materialShaders</Filter>
+    </None>
+    <None Include="Shaders\skylineShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\materialShaders</Filter>
+    </None>
+    <None Include="Shaders\grassShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\materialShaders</Filter>
+    </None>
+    <None Include="Shaders\particleShaderLaser.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\particlesShaders</Filter>
+    </None>
+    <None Include="Shaders\advanceParticlesLaser.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\StreamOutputShaders</Filter>
+    </None>
+    <None Include="Assets\models\enemy.md5mesh">
+      <Filter>01_Systems\Graphics\Assets\md5</Filter>
+    </None>
+    <None Include="Assets\models\enemy.standing.md5anim">
+      <Filter>01_Systems\Graphics\Assets\md5</Filter>
+    </None>
+    <None Include="Assets\models\enemy.walking.md5anim">
+      <Filter>01_Systems\Graphics\Assets\md5</Filter>
+    </None>
+    <None Include="Shaders\spikesShader.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\materialShaders</Filter>
+    </None>
+    <None Include="Assets\models\boss.md5mesh">
+      <Filter>01_Systems\Graphics\Assets\md5</Filter>
+    </None>
+    <None Include="Assets\models\boss.standing.md5anim">
+      <Filter>01_Systems\Graphics\Assets\md5</Filter>
+    </None>
+    <None Include="Assets\models\boss.walking.md5anim">
+      <Filter>01_Systems\Graphics\Assets\md5</Filter>
+    </None>
+    <None Include="Shaders\particleShaderClouds.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\particlesShaders</Filter>
+    </None>
+    <None Include="Shaders\advanceParticlesClouds.fx">
+      <Filter>01_Systems\Graphics\shaders\hlsl\StreamOutputShaders</Filter>
+    </None>
+    <None Include="Assets\textures\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AlienEngine.rc" />
+  </ItemGroup>
+</Project>

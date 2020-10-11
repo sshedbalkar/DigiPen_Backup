@@ -1,0 +1,17 @@
+﻿Build started 3/17/2013 12:49:05 AM.
+     1>Project "E:\Work_Work\Backup\SVN\Team\Team_Alien\test\MemMgr\MemMgr_Test\MemMgr_Test\MemMgr_Test.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\MemMgr_Test.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         MemMgr_Test.vcxproj -> E:\Work_Work\Backup\SVN\Team\Team_Alien\test\MemMgr\MemMgr_Test\Debug\MemMgr_Test.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\MemMgr_Test.unsuccessfulbuild".
+         Touching "Debug\MemMgr_Test.lastbuildstate".
+     1>Done Building Project "E:\Work_Work\Backup\SVN\Team\Team_Alien\test\MemMgr\MemMgr_Test\MemMgr_Test\MemMgr_Test.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.05

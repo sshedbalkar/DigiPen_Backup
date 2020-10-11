@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AlienEngine", "AlienEngine.vcxproj", "{8AAAE19C-9805-4DC8-85B7-DAF7762252FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Graphics", "Graphics\Graphics.vcxproj", "{68764A2C-6447-4104-8B95-BE63F026DAF2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LUA", "LUA\LUA.vcxproj", "{78B45E74-1B5D-4D59-A927-C0ACF3C74C58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AAAE19C-9805-4DC8-85B7-DAF7762252FC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8AAAE19C-9805-4DC8-85B7-DAF7762252FC}.Debug|Win32.Build.0 = Debug|Win32
+		{8AAAE19C-9805-4DC8-85B7-DAF7762252FC}.Release|Win32.ActiveCfg = Release|Win32
+		{8AAAE19C-9805-4DC8-85B7-DAF7762252FC}.Release|Win32.Build.0 = Release|Win32
+		{68764A2C-6447-4104-8B95-BE63F026DAF2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68764A2C-6447-4104-8B95-BE63F026DAF2}.Debug|Win32.Build.0 = Debug|Win32
+		{68764A2C-6447-4104-8B95-BE63F026DAF2}.Release|Win32.ActiveCfg = Release|Win32
+		{68764A2C-6447-4104-8B95-BE63F026DAF2}.Release|Win32.Build.0 = Release|Win32
+		{78B45E74-1B5D-4D59-A927-C0ACF3C74C58}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78B45E74-1B5D-4D59-A927-C0ACF3C74C58}.Debug|Win32.Build.0 = Debug|Win32
+		{78B45E74-1B5D-4D59-A927-C0ACF3C74C58}.Release|Win32.ActiveCfg = Release|Win32
+		{78B45E74-1B5D-4D59-A927-C0ACF3C74C58}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

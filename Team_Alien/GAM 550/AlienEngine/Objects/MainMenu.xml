@@ -1,0 +1,8 @@
+<root>
+	<options>
+		<resolution>2</resolution>
+		<antialiasing>1</antialiasing>
+		<vsync>1</vsync>
+		<windowed>0</windowed>
+	</options>
+</root>

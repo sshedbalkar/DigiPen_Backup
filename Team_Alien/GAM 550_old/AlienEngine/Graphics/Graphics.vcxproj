@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{68764A2C-6447-4104-8B95-BE63F026DAF2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Graphics</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)_Release</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dxerr.lib;d3d10.lib;d3dx10.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Scripts\graphicsUtility.lua" />
+    <None Include="..\Scripts\materials\debug2d.lua" />
+    <None Include="..\Scripts\materials\debugMaterial.lua" />
+    <None Include="..\Scripts\materials\light.lua" />
+    <None Include="..\Scripts\materials\heightmappedMesh.lua" />
+    <None Include="..\Scripts\materials\gui.lua" />
+    <None Include="..\Scripts\materials\Model.lua" />
+    <None Include="..\Scripts\materials\sky.lua" />
+    <None Include="..\Scripts\materials\testModel.lua" />
+    <None Include="..\Scripts\pipeline.lua">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\Scripts\assets.lua" />
+    <None Include="..\Shaders\debug2d.fx" />
+    <None Include="..\Shaders\hdr.fx" />
+    <None Include="..\Shaders\Model.fx" />
+    <None Include="..\Shaders\conversions.fxh" />
+    <None Include="..\Shaders\deferredPass.fx" />
+    <None Include="..\Shaders\fxaa.fx" />
+    <None Include="..\Shaders\debugcube.fx" />
+    <None Include="..\Shaders\Fxaa3_11.fxh" />
+    <None Include="..\Shaders\heightmappedMesh.fx" />
+    <None Include="..\Shaders\modelDepth.fx" />
+    <None Include="..\Shaders\sky.fx" />
+    <None Include="..\Shaders\sprite.fx" />
+    <None Include="..\Shaders\testCS.fx" />
+    <None Include="..\Shaders\testD.fx" />
+    <None Include="..\Shaders\testSO.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Graphics\animation.cpp" />
+    <ClCompile Include="..\source\Graphics\AnimationController.cpp" />
+    <ClCompile Include="..\source\Graphics\d3dmanager.cpp" />
+    <ClCompile Include="..\source\Graphics\DXObject.cpp" />
+    <ClCompile Include="..\source\Graphics\effect.cpp" />
+    <ClCompile Include="..\source\Graphics\font.cpp" />
+    <ClCompile Include="..\source\Graphics\graphics.cpp" />
+    <ClCompile Include="..\source\Graphics\graphicsGlue.cpp" />
+    <ClCompile Include="..\source\Graphics\GraphicsObject.cpp" />
+    <ClCompile Include="..\source\Graphics\material.cpp" />
+    <ClCompile Include="..\source\Graphics\renderer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\Graphics\animation.h" />
+    <ClInclude Include="..\source\Graphics\AnimationController.h" />
+    <ClInclude Include="..\source\Graphics\d3dmanager.h" />
+    <ClInclude Include="..\source\Graphics\deviceStates.h" />
+    <ClInclude Include="..\source\Graphics\DXObject.h" />
+    <ClInclude Include="..\source\Graphics\effect.h" />
+    <ClInclude Include="..\source\Graphics\font.h" />
+    <ClInclude Include="..\source\Graphics\graphics.h" />
+    <ClInclude Include="..\source\Graphics\graphicsGlue.h" />
+    <ClInclude Include="..\source\Graphics\GraphicsObject.h" />
+    <ClInclude Include="..\source\Graphics\material.h" />
+    <ClInclude Include="..\source\Graphics\ModelStructures.h" />
+    <ClInclude Include="..\source\Graphics\renderer.h" />
+    <ClInclude Include="..\source\terrain.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

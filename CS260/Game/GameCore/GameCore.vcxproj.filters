@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Core\Game">
+      <UniqueIdentifier>{1860990f-a02d-4789-97d0-cd07f56b5f99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Level">
+      <UniqueIdentifier>{0a78a7c1-802d-47fd-b713-89f9253457f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\GameObject">
+      <UniqueIdentifier>{a7f1ba07-2122-4627-b365-f9aaf9e94bdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Graphics">
+      <UniqueIdentifier>{52b1971a-d51a-45f7-a93c-6af8484047bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Math">
+      <UniqueIdentifier>{12e13a4a-905e-47df-ad1d-b0c35621b6f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Mouse">
+      <UniqueIdentifier>{2125d04e-28a0-4ca6-ac94-5645bc0ff295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Input">
+      <UniqueIdentifier>{e0415d29-dbca-4b9b-b122-100cd12a8c1b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>Core\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Core\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Core\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix2D.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2D.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math2D.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Core\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="InputString.cpp">
+      <Filter>Core\Input</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Core\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Core\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Core\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix2D.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math2D.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Core\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="InputString.h">
+      <Filter>Core\Input</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

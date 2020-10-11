@@ -1,0 +1,128 @@
+<root>
+	<constants>
+		<BloomThreshold>3.500000</BloomThreshold>
+		<BloomMagnitude>0.900000</BloomMagnitude>
+		<BloomBlurSigma>0.800000</BloomBlurSigma>
+		<AdaptationRate>0.000000</AdaptationRate>
+		<ExposureKeyValue>0.015000</ExposureKeyValue>
+		<SpecularIntensity>0.001000</SpecularIntensity>
+		<SpecularR>1.000000</SpecularR>
+		<SpecularG>1.000000</SpecularG>
+		<SpecularB>1.000000</SpecularB>
+		<Balance>0.500000</Balance>
+		<Roughness>1.000000</Roughness>
+		<ConstAmbient>0.3922,0.3922,0.3922,1.0000</ConstAmbient>
+		<SkyColor>1.0000,1.0000,1.0000,1.0000</SkyColor>
+		<GroundColor>0.2350,0.2350,0.2940,1.0000</GroundColor>
+		<HemiIntensity>1.000000</HemiIntensity>
+	</constants>
+	<items>
+		<item archetype="GOC_Type_Hero">
+			<GlobalID>1</GlobalID>
+			<Position>124.1379,58.8320,129.3302</Position>
+			<Scale>2.0000,2.0000,2.0000</Scale>
+			<Orientation>0.0536,-0.7090,0.0542,0.7011</Orientation>
+		</item>
+		<item archetype="GOC_Type_LightBulb">
+			<GlobalID>2</GlobalID>
+			<Position>40.0978,203.2556,66.6225</Position>
+			<Scale>1.0000,1.0000,1.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+			<Color>0.0000,0.0000,0.0000</Color>
+			<Fallout>0.000000</Fallout>
+			<LightCanMove>0</LightCanMove>
+		</item>
+		<item archetype="GOC_Type_Floor">
+			<GlobalID>3</GlobalID>
+			<Position>58.9482,-0.5322,134.0844</Position>
+			<Scale>100.0000,1.0000,100.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_WallTest">
+			<GlobalID>4</GlobalID>
+			<Position>61.3645,19.3976,161.0948</Position>
+			<Scale>100.0000,1.0000,100.0000</Scale>
+			<Orientation>-0.5000,0.5000,0.5000,-0.5000</Orientation>
+		</item>
+		<item archetype="GOC_Type_WallTest">
+			<GlobalID>5</GlobalID>
+			<Position>147.4758,44.5121,142.6883</Position>
+			<Scale>40.0000,3.0000,67.0000</Scale>
+			<Orientation>0.0000,-0.7071,0.0000,-0.7071</Orientation>
+		</item>
+		<item archetype="GOC_Type_LightWithoutBulb">
+			<GlobalID>6</GlobalID>
+			<Position>86.8913,7.4920,135.5538</Position>
+			<Scale>1.0000,1.0000,1.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+			<Color>0.0784,0.1961,0.7843</Color>
+			<Fallout>8.000000</Fallout>
+			<LightCanMove>0</LightCanMove>
+		</item>
+		<item archetype="GOC_Type_LightWithoutBulb">
+			<GlobalID>7</GlobalID>
+			<Position>86.9342,7.4920,131.5649</Position>
+			<Scale>1.0000,1.0000,1.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+			<Color>0.0784,0.7843,0.7843</Color>
+			<Fallout>8.000000</Fallout>
+			<LightCanMove>0</LightCanMove>
+		</item>
+		<item archetype="GOC_Type_TutorialBox">
+			<GlobalID>8</GlobalID>
+			<Position>38.0249,110.7237,104.6134</Position>
+			<Scale>15.0000,15.0000,20.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+			<LevelBoxId>1</LevelBoxId>
+		</item>
+		<item archetype="GOC_Type_TutorialBox">
+			<GlobalID>9</GlobalID>
+			<Position>48.8941,7.2677,133.0662</Position>
+			<Scale>9.0000,15.0000,20.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+			<LevelBoxId>2</LevelBoxId>
+		</item>
+		<item archetype="GOC_Type_WallTest">
+			<GlobalID>10</GlobalID>
+			<Position>56.3566,19.3976,110.1317</Position>
+			<Scale>100.0000,1.0000,100.0000</Scale>
+			<Orientation>-0.5000,0.5000,0.5000,-0.5000</Orientation>
+		</item>
+		<item archetype="GOC_Type_WallTest">
+			<GlobalID>11</GlobalID>
+			<Position>45.7807,19.3976,135.6467</Position>
+			<Scale>100.0000,1.0000,100.0000</Scale>
+			<Orientation>0.0000,0.0000,0.7071,0.7071</Orientation>
+		</item>
+		<item archetype="GOC_Type_Sphere_ThrowerTest">
+			<GlobalID>12</GlobalID>
+			<Position>48.9264,44.4648,113.6474</Position>
+			<Scale>2.5000,2.5000,2.5000</Scale>
+			<Orientation>0.7613,-0.2167,-0.3152,-0.5235</Orientation>
+		</item>
+		<item archetype="GOC_Type_Sphere_ThrowerTest">
+			<GlobalID>13</GlobalID>
+			<Position>48.9264,44.4648,157.5095</Position>
+			<Scale>2.5000,2.5000,2.5000</Scale>
+			<Orientation>0.3384,-0.5167,-0.7512,-0.2328</Orientation>
+		</item>
+		<item archetype="GOC_Type_Sphere_ThrowerTest">
+			<GlobalID>14</GlobalID>
+			<Position>97.8147,44.4648,158.2160</Position>
+			<Scale>2.5000,2.5000,2.5000</Scale>
+			<Orientation>-0.3207,-0.5219,-0.7590,0.2205</Orientation>
+		</item>
+		<item archetype="GOC_Type_Sphere_ThrowerTest">
+			<GlobalID>15</GlobalID>
+			<Position>97.6146,44.4648,113.2905</Position>
+			<Scale>2.5000,2.5000,2.5000</Scale>
+			<Orientation>-0.7513,-0.2327,-0.3385,0.5165</Orientation>
+		</item>
+		<item archetype="GOC_Type_WallTest">
+			<GlobalID>16</GlobalID>
+			<Position>101.1245,-14.1784,128.3808</Position>
+			<Scale>100.0000,1.0000,100.0000</Scale>
+			<Orientation>0.0000,0.0000,0.7071,0.7071</Orientation>
+		</item>
+	</items>
+</root>

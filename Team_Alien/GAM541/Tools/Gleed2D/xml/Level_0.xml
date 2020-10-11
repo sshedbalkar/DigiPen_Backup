@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<root Name="root">
+    <Level Name="Level">
+        <Layers>
+            <Layer Name="1" Visible="true">
+                <Items>
+                    <Item d6p1:type="RectangleItem" Name="Rectangle_1" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">
+                        <PositionOrig>
+                            <X>-960</X>
+                            <Y>-64</Y>
+                        </PositionOrig>
+                        <ArchetypeId Type="string">
+                            <value>platform_test0</value>
+                        </ArchetypeId>
+                        <Position Type="vec2">
+                            <value>-4.8,-0.32</value>
+                        </Position>
+                        <Rotation Type="float">
+                            <value>0</value>
+                        </Rotation>
+                        <Width>768</Width>
+                        <Height>448</Height>
+                        <FillColor>
+                            <R>192</R>
+                            <G>0</G>
+                            <B>192</B>
+                            <A>145</A>
+                            <PackedValue>2445279424</PackedValue>
+                        </FillColor>
+                        <Scale Type="string">
+                            <value>3.84,2.24,1</value>
+                        </Scale>
+                    </Item>
+                    <Item d6p1:type="RectangleItem" Name="Rectangle_2" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">
+                        <PositionOrig>
+                            <X>-128</X>
+                            <Y>-64</Y>
+                        </PositionOrig>
+                        <ArchetypeId Type="string">
+                            <value>platform_test0</value>
+                        </ArchetypeId>
+                        <Position Type="vec2">
+                            <value>-0.64,-0.32</value>
+                        </Position>
+                        <Rotation Type="float">
+                            <value>0</value>
+                        </Rotation>
+                        <Width>128</Width>
+                        <Height>128</Height>
+                        <FillColor>
+                            <R>192</R>
+                            <G>0</G>
+                            <B>192</B>
+                            <A>145</A>
+                            <PackedValue>2445279424</PackedValue>
+                        </FillColor>
+                        <Scale Type="string">
+                            <value>0.64,0.64,1</value>
+                        </Scale>
+                    </Item>
+                    <Item d6p1:type="RectangleItem" Name="Rectangle_3" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">
+                        <PositionOrig>
+                            <X>192</X>
+                            <Y>64</Y>
+                        </PositionOrig>
+                        <ArchetypeId Type="string">
+                            <value>platform_test0</value>
+                        </ArchetypeId>
+                        <Position Type="vec2">
+                            <value>0.96,0.32</value>
+                        </Position>
+                        <Rotation Type="float">
+                            <value>0</value>
+                        </Rotation>
+                        <Width>128</Width>
+                        <Height>128</Height>
+                        <FillColor>
+                            <R>192</R>
+                            <G>0</G>
+                            <B>192</B>
+                            <A>145</A>
+                            <PackedValue>2445279424</PackedValue>
+                        </FillColor>
+                        <Scale Type="string">
+                            <value>0.64,0.64,1</value>
+                        </Scale>
+                    </Item>
+                </Items>
+            </Layer>
+        </Layers>
+    </Level>
+    <EditorRelated>
+        <NextItemNumber>3</NextItemNumber>
+        <ContentrootFolder>C:\</ContentrootFolder>
+    </EditorRelated>
+</root>

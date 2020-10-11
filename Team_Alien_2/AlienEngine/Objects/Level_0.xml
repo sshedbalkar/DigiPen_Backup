@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root Name="root">
+    <Level Name="Level">
+        <Layers>
+            <Layer Name="Main_Layer" Visible="true">
+                <Items>
+                    
+                  
+                </Items>
+            </Layer>
+        </Layers>
+    </Level>
+    <EditorRelated>
+        <NextItemNumber>383</NextItemNumber>
+        <ContentrootFolder>C:\</ContentrootFolder>
+    </EditorRelated>
+</root>

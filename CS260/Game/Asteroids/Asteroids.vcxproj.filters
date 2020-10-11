@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Asteroids">
+      <UniqueIdentifier>{06e7014b-9648-4c83-975f-1b585e087037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="networking">
+      <UniqueIdentifier>{1433cc52-cd51-4009-8fce-af945b2e4821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{d278f87a-569b-4224-8a30-35de50fe7300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{53153514-c1aa-44ac-9f3c-87ed6a256f98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lobby">
+      <UniqueIdentifier>{619e1612-dc53-4723-b350-2bf7bd472d52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Globals">
+      <UniqueIdentifier>{38d561f1-f756-47a7-9ebe-cfde779f960f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Asteroids.h">
+      <Filter>Asteroids</Filter>
+    </ClInclude>
+    <ClInclude Include="networking\UDPConnection.h">
+      <Filter>networking</Filter>
+    </ClInclude>
+    <ClInclude Include="networking\TCPConnection.h">
+      <Filter>networking</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ReturnCodes.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ReturnNames.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\Utility.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Lobby.h">
+      <Filter>Lobby</Filter>
+    </ClInclude>
+    <ClInclude Include="networking\NetworkManager.h">
+      <Filter>networking</Filter>
+    </ClInclude>
+    <ClInclude Include="networking\CommandCodes.h">
+      <Filter>networking</Filter>
+    </ClInclude>
+    <ClInclude Include="networking\DataPacket.h">
+      <Filter>networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>Globals</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Asteroids.cpp">
+      <Filter>Asteroids</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Asteroids</Filter>
+    </ClCompile>
+    <ClCompile Include="networking\TCPConnection.cpp">
+      <Filter>networking</Filter>
+    </ClCompile>
+    <ClCompile Include="networking\UDPConnection.cpp">
+      <Filter>networking</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\Utility.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Lobby.cpp">
+      <Filter>Lobby</Filter>
+    </ClCompile>
+    <ClCompile Include="networking\NetworkManager.cpp">
+      <Filter>networking</Filter>
+    </ClCompile>
+    <ClCompile Include="networking\DataPacket.cpp">
+      <Filter>networking</Filter>
+    </ClCompile>
+    <ClCompile Include="Globals.cpp">
+      <Filter>Globals</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

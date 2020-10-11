@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Archetypes>
+		<Archetype id ="GOC_Type_Button1">
+		  <Components>
+        <Component Type ="Transform">
+          <Scale>3,1,3</Scale>
+        </Component>
+        <Component Type ="CollisionBox">
+          <HalfSize>1.5,0.5,1.5</HalfSize>
+        </Component>
+        <Component Type ="ModelComponent">
+			  <ModelName>button</ModelName>
+       	</Component>
+        <Component Type="RigidBody">
+          <density>0</density>
+          <acceleration>0.0,0.0,0.0</acceleration>
+          <linearDamping>0.95</linearDamping>
+          <angularDamping>0.8</angularDamping>
+          <canSleep>1</canSleep>
+          <isSleeping>0</isSleeping>
+        </Component>
+        <Component Type="ActivationProperties">
+          <ActivatedBy  Type="string" Description="">
+            <value>0,0,0,0</value>
+          </ActivatedBy>
+          <ObjectActivationId Type="int" Description="">
+            <value>0</value>
+          </ObjectActivationId>
+          <ResetOnLoad Type="string" Description="">
+            <value>0</value>
+          </ResetOnLoad>
+        </Component>
+      </Components>
+		</Archetype>
+	</Archetypes>	
+</root>

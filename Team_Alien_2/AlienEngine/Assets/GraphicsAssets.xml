@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>  
+  <textures>
+    <texture id="WoodTile">
+      <diffuse>Assets\\textures\\woodtexture.png</diffuse>
+      <mask>Assets\\textures\\box_mask.png</mask>
+    </texture>
+    <texture id="ParticleSquareGold">
+      <diffuse>Assets\\textures\\particle_gold.jpg</diffuse>
+    </texture>
+    <texture id="ParticleSquareWhite">
+      <diffuse>Assets\\textures\\particle_white.jpg</diffuse>
+    </texture>
+    <texture id="WaterTexture">
+      <diffuse>Assets\\textures\\waterTexture.jpg</diffuse>
+    </texture>
+    <texture id="BackdropSkyBright">
+      <diffuse>Assets\\textures\\backdrop_sky.jpg</diffuse>
+    </texture>
+    <texture id="BlackRockyPlatform">
+      <diffuse>Assets\\textures\\dark_purple.png</diffuse>
+      <mask>Assets\\textures\\poisonous.png</mask>
+    </texture>
+    <texture id="GreenPlatform">
+      <diffuse>Assets\\textures\\green_platform.jpg</diffuse>
+      <normal>Assets\\textures\\green_platform_normal.jpg</normal>
+      <mask>Assets\\textures\\flowers.png</mask>
+    </texture>
+    <texture id="GreenPlatformWF">
+      <diffuse>Assets\\textures\\green_platform.jpg</diffuse>
+      <normal>Assets\\textures\\green_platform_normal.jpg</normal>
+   </texture>	
+    <texture id="BrickPlatform">
+      <diffuse>Assets\\textures\\brick.png</diffuse>
+      <normal>Assets\\textures\\brick_normal.png</normal>
+      <mask>Assets\\textures\\brick_mask.png</mask>
+    </texture>
+    <texture id="InstructionPlatform0">
+      <diffuse>Assets\\textures\\instruction_platform.png</diffuse>
+      <mask>Assets\\textures\\instruction0_mask.png</mask>
+    </texture>
+    <texture id="InstructionPlatform1">
+      <diffuse>Assets\\textures\\instruction_platform.png</diffuse>
+      <mask>Assets\\textures\\instruction1_mask.png</mask>
+    </texture>
+    <texture id="InstructionPlatform19">
+      <diffuse>Assets\\textures\\instruction_platform.png</diffuse>
+      <mask>Assets\\textures\\instruction19_mask.png</mask>
+    </texture>
+    <texture id="InstructionPlatform20">
+      <diffuse>Assets\\textures\\instruction_platform.png</diffuse>
+      <mask>Assets\\textures\\instruction20_mask.png</mask>
+    </texture>
+    <texture id="InstructionPlatform21">
+      <diffuse>Assets\\textures\\instruction_platform.png</diffuse>
+      <mask>Assets\\textures\\instruction21_mask.png</mask>
+    </texture>
+    <texture id="InstructionPlatform22">
+      <diffuse>Assets\\textures\\instruction_platform.png</diffuse>
+      <mask>Assets\\textures\\instruction22_mask.png</mask>
+    </texture>
+    <texture id="GreenPlatformWithoutGrass">
+      <diffuse>Assets\\textures\\green_platform.jpg</diffuse>
+      <normal>Assets\\textures\\green_platform_normal.jpg</normal>
+    </texture>
+    <texture id="OrangePlatform">
+      <diffuse>Assets\\textures\\orange_platform.png</diffuse>
+    </texture>
+    <texture id="Skyline">
+      <diffuse>Assets\\textures\\skyline.png</diffuse>
+      <normal>Assets\\textures\\Sand_4_Normal.jpg</normal>
+    </texture>
+    <texture id="RedRockyPlatform">
+      <diffuse>Assets\\textures\\particle_0xE42700.jpg</diffuse>
+      <mask>Assets\\textures\\button_platform_mask.png</mask>
+    </texture>
+	<texture id="BlueRockyPlatform">
+      <diffuse>Assets\\textures\\dark_blue.png</diffuse>
+      <mask>Assets\\textures\\button_platform_mask.png</mask>
+    </texture>
+    <texture id="HeroFace0">
+      <diffuse>Assets\\textures\\hero_face0.png</diffuse>
+    </texture>
+    <texture id="HeroFace1">
+      <diffuse>Assets\\textures\\hero_face1.png</diffuse>
+    </texture>
+    <texture id="EnemyFace0">
+      <diffuse>Assets\\textures\\enemy_face0.png</diffuse>
+    </texture>
+    <texture id="EnemyFace1">
+      <diffuse>Assets\\textures\\enemy_face1.png</diffuse>
+    </texture>
+    <texture id="BossFace0">
+      <diffuse>Assets\\textures\\boss_face0.png</diffuse>
+    </texture>
+    <texture id="BossFace1">
+      <diffuse>Assets\\textures\\boss_face1.png</diffuse>
+    </texture>
+    <texture id="InstructionMovement">
+      <diffuse>Assets\\textures\\movement.png</diffuse>
+    </texture>
+    <texture id="InstructionJump">
+      <diffuse>Assets\\textures\\jump.png</diffuse>
+    </texture>
+    <texture id="InstructionPoint">
+      <diffuse>Assets\\textures\\point.png</diffuse>
+    </texture>
+    <texture id="InstructionShoot">
+      <diffuse>Assets\\textures\\shoot.png</diffuse>
+    </texture>
+    <texture id="InstructionTeleport">
+      <diffuse>Assets\\textures\\teleport.png</diffuse>
+    </texture>
+    <texture id="GUIButtonTexture">
+      <diffuse>Assets\\textures\\button.png</diffuse>
+    </texture>
+    <texture id="DigiPenLogo">
+      <diffuse>Assets\\textures\\DigiPenLogo.jpg</diffuse>
+    </texture>
+    <texture id="TeamLogo">
+      <diffuse>Assets\\textures\\TeamLogo.jpg</diffuse>
+    </texture>
+    <texture id="TheEnd">
+      <diffuse>Assets\\textures\\TheEnd.png</diffuse>
+    </texture>
+    <texture id="Credits">
+      <diffuse>Assets\\textures\\Credits.png</diffuse>
+    </texture>
+    <texture id="GameTitle">
+      <diffuse>Assets\\textures\\gamename.png</diffuse>
+    </texture>
+  </textures>
+
+  <meshes>
+    <mesh id="hero" animated ="true" path="Assets\\models\\hero.md5mesh"/>
+    <mesh id="enemy" animated ="true" path="Assets\\models\\enemy.md5mesh"/>
+    <mesh id="boss" animated ="true" path="Assets\\models\\boss.md5mesh"/>
+    <mesh id="pillar" animated="false" path="Assets\\models\\pillar.dae"/>
+  </meshes>
+  
+  <animations>
+    <animation id="hero_standing" path="Assets\\models\\hero.standing.md5anim"/>
+    <animation id="hero_walking" path="Assets\\models\\hero.walking.md5anim"/>
+    <animation id="enemy_standing" path="Assets\\models\\enemy.standing.md5anim"/>
+    <animation id="enemy_walking" path="Assets\\models\\enemy.walking.md5anim"/>
+    <animation id="boss_standing" path="Assets\\models\\boss.standing.md5anim"/>
+    <animation id="boss_walking" path="Assets\\models\\boss.walking.md5anim"/>
+  </animations>
+
+  <scenes>
+    <scene id="sunny_land" path="Assets\\scenes\\sunny_land.xml"/>
+  </scenes>
+  
+  <fonts>
+    <font id="" path=""/>
+  </fonts>
+</root>

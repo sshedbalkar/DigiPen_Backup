@@ -1,0 +1,11 @@
+Alien Main...
+3.14
+0
+Loading Sounds...
+Level 1: Load
+Opening Game Settings data file: Objects\gameSettings.xml
+Level_1: init
+Opening Level file: Objects\Level_0.xml
+Level 1: Free
+Cleared Game logic data
+Level 1: Unload

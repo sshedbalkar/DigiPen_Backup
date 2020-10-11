@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Archetypes>
+		<Archetype id ="GOC_Type_SCRIPT">
+			<Components>
+				<Component Type ="Transform">
+					<Scale>2.0,2.0,2.0</Scale>
+				</Component>
+				<!--
+				<Component Type="ScriptComponent">
+					<Script id="LuaTest_1"/>
+				</Component>
+				-->
+			</Components>
+		</Archetype>
+	</Archetypes>	
+</root>

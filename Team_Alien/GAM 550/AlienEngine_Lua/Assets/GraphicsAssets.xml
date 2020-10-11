@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>  
+  <Models>
+    <Model id="Cube">
+     <texture1>Assets//textures//cube.png</texture1>
+	   <bin>Assets//models//cube.bin</bin>
+	  <textureType>SingleTexture</textureType>
+    </Model>
+    <Model id="Cube2">
+      <texture1>Assets//textures//poisonous.png</texture1>
+      <bin>Assets//models//cube2.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+      <Model id="Cube3">
+        <texture1>Assets//textures//Seamless_normal.png</texture1>
+        <bin>Assets//models//cube3.bin</bin>
+        <textureType>SingleTexture</textureType>
+      </Model>
+    <Model id="Button">
+      <texture1>Assets//textures//red.png</texture1>
+      <bin>Assets//models//button.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+    <Model id="Sphere">
+      <texture1>Assets//textures//earth.png</texture1>
+      <bin>Assets//models//sphere.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+	<Model id="goober@walk">
+     <texture1>Assets//models//goober_UV.tif</texture1>
+	   <bin>Assets//models//goober@walk.bin</bin>
+	  <textureType>SingleTexture</textureType>
+    </Model>
+	<Model id="Square">
+      <texture1>Assets//textures//stone01.dds</texture1>
+	  <texture2>Assets//textures//light01.dds</texture2>
+	   <bin>Assets//models//square.bin</bin>
+	  <textureType>LightMap</textureType>
+    </Model>
+
+    <Model id="Fog">
+      <texture1>Assets//textures//seafloor.dds</texture1>
+      <bin>Assets//models//Cube1.bin</bin>
+      <textureType>Fog</textureType>
+    </Model>
+
+    <Model id="ClipPlane">
+      <texture1>Assets//textures//seafloor.dds</texture1>
+      <bin>Assets//models//square1.bin</bin>
+      <textureType>ClipPlane</textureType>
+    </Model>
+
+    <Model id="WallUnselected">
+      <texture1>Assets//textures//whitewall.jpg</texture1>
+      <bin>Assets//models//wallunselected.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+
+    <Model id="WallSelected">
+      <texture1>Assets//textures//whitewall.jpg</texture1>
+      <texture2>Assets//textures//darkblue.png</texture2>
+      <bin>Assets//models//wallselected.bin</bin>
+      <textureType>TextureBlend</textureType>
+    </Model>
+
+    <Model id="TransparentBridge">
+      <texture1>Assets//textures//blueTile.jpg</texture1>
+      <bin>Assets//models//transparentbridge.bin</bin>
+      <textureType>Transparent</textureType>
+    </Model>
+
+   </Models> 
+   
+   <Models2>
+    <Model2 id="Wall">
+      <texture1>Assets//textures//rockywall.jpg</texture1>
+	   <texture2>Assets//textures//rockywall_normal.jpg</texture2>
+	  <texture3>Assets//textures//white.png</texture3>
+	   <bin>Assets//models//wall.txt</bin>
+	  <textureType>Spec</textureType>
+    </Model2>
+     <Model2 id="Floor">
+       <texture1>Assets//textures//tile.png</texture1>
+       <texture2>Assets//textures//tile_normal.png</texture2>
+       <texture3>Assets//textures//white.png</texture3>
+       <bin>Assets//models//floor.txt</bin>
+       <textureType>Spec</textureType>
+     </Model2>
+     
+   </Models2> 
+</root>
+
+
+
+
+

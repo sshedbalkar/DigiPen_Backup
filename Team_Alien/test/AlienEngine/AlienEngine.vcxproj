@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8AAAE19C-9805-4DC8-85B7-DAF7762252FC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AlienEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dxerr.lib;d3d10.lib;d3dx10.lib;d3d10.lib;d3dx10.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>dxerr.lib;d3d10.lib;d3dx10.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Body.cpp" />
+    <ClCompile Include="source\Camera.cpp" />
+    <ClCompile Include="source\Collision.cpp" />
+    <ClCompile Include="source\Composition.cpp" />
+    <ClCompile Include="source\Core.cpp" />
+    <ClCompile Include="source\D3DManager.cpp" />
+    <ClCompile Include="source\DebugDraw.cpp" />
+    <ClCompile Include="source\debugGeometry.cpp" />
+    <ClCompile Include="source\Factory.cpp" />
+    <ClCompile Include="source\FilePath.cpp" />
+    <ClCompile Include="source\font.cpp" />
+    <ClCompile Include="source\GameLogic.cpp" />
+    <ClCompile Include="source\Graphics.cpp" />
+    <ClCompile Include="source\Mesh.cpp" />
+    <ClCompile Include="source\Physics.cpp" />
+    <ClCompile Include="source\Precompiled.cpp" />
+    <ClCompile Include="source\Resolution.cpp" />
+    <ClCompile Include="source\shader.cpp" />
+    <ClCompile Include="source\Sprite.cpp" />
+    <ClCompile Include="source\TextSerialization.cpp" />
+    <ClCompile Include="source\Transform.cpp" />
+    <ClCompile Include="source\WindowsSystem.cpp" />
+    <ClCompile Include="source\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\binaryIO.h" />
+    <ClInclude Include="source\Body.h" />
+    <ClInclude Include="source\Camera.h" />
+    <ClInclude Include="source\Collision.h" />
+    <ClInclude Include="source\Component.h" />
+    <ClInclude Include="source\ComponentCreator.h" />
+    <ClInclude Include="source\ComponentTypeIds.h" />
+    <ClInclude Include="source\Composition.h" />
+    <ClInclude Include="source\Containers.h" />
+    <ClInclude Include="source\Core.h" />
+    <ClInclude Include="source\D3DManager.h" />
+    <ClInclude Include="source\DebugDiagnostic.h" />
+    <ClInclude Include="source\DebugDraw.h" />
+    <ClInclude Include="source\debugGeometry.h" />
+    <ClInclude Include="source\DirectXIncludes.h" />
+    <ClInclude Include="source\Engine.h" />
+    <ClInclude Include="source\Factory.h" />
+    <ClInclude Include="source\FilePath.h" />
+    <ClInclude Include="source\font.h" />
+    <ClInclude Include="source\GameLogic.h" />
+    <ClInclude Include="source\Graphics.h" />
+    <ClInclude Include="source\Mesh.h" />
+    <ClInclude Include="source\Message.h" />
+    <ClInclude Include="source\ObjectLinkedList.h" />
+    <ClInclude Include="source\Physics.h" />
+    <ClInclude Include="source\Precompiled.h" />
+    <ClInclude Include="source\Resolution.h" />
+    <ClInclude Include="source\Serialization.h" />
+    <ClInclude Include="source\shader.h" />
+    <ClInclude Include="source\Sprite.h" />
+    <ClInclude Include="source\System.h" />
+    <ClInclude Include="source\text.h" />
+    <ClInclude Include="source\TextSerialization.h" />
+    <ClInclude Include="source\Transform.h" />
+    <ClInclude Include="source\VertexTypes.h" />
+    <ClInclude Include="source\VMath.h" />
+    <ClInclude Include="source\WindowsIncludes.h" />
+    <ClInclude Include="source\WindowsSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Objects\Ball.txt" />
+    <None Include="Objects\Bomb.txt" />
+    <None Include="Objects\Box.txt" />
+    <None Include="Objects\Camera.txt" />
+    <None Include="Objects\Ground.txt" />
+    <None Include="Objects\Shrapnel.txt" />
+    <None Include="Objects\TestLevel.txt" />
+    <None Include="Objects\Wall.txt" />
+    <None Include="Objects\WallLeft.txt" />
+    <None Include="Objects\WallRight.txt" />
+    <None Include="Shaders\debugShader.fx" />
+    <None Include="Shaders\fontShader.fx" />
+    <None Include="Shaders\staticMeshShader.fx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,16 @@
+
+--------------Tracker stats--------------
+Total Allocs: 1, Total Leaks: 1
+e:\work_work\backup\svn\team\team_alien\test\memmgr\memmgr_test\memmgr_test\source\main.cpp:(245): 148 Bytes
+--------------Allocator stats--------------
+Total size: 1.2500 MB, Used: 256 Bytes
+Block Size: 8, Max possible allocs: 16384, Max used Allocs: 0, Max Frees: 0
+Block Size: 16, Max possible allocs: 8192, Max used Allocs: 0, Max Frees: 0
+Block Size: 32, Max possible allocs: 4096, Max used Allocs: 0, Max Frees: 0
+Block Size: 64, Max possible allocs: 2048, Max used Allocs: 0, Max Frees: 0
+Block Size: 128, Max possible allocs: 1024, Max used Allocs: 0, Max Frees: 0
+Block Size: 256, Max possible allocs: 512, Max used Allocs: 1, Max Frees: 0
+Block Size: 512, Max possible allocs: 256, Max used Allocs: 0, Max Frees: 0
+Block Size: 1024, Max possible allocs: 128, Max used Allocs: 0, Max Frees: 0
+Block Size: 2048, Max possible allocs: 64, Max used Allocs: 0, Max Frees: 0
+Block Size: 4096, Max possible allocs: 32, Max used Allocs: 0, Max Frees: 0

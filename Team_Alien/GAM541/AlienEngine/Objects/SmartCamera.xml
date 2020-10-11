@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<root Name="root">
+	<Points >
+
+    <Point>
+      <value>-50,0,0</value>
+    </Point>
+    <Point>
+      <value>-20,0,0</value>
+    </Point>
+    <Point>
+      <value>-29,0,0</value>
+    </Point>
+
+    <Point>
+      <value>148.3,0,0</value>
+    </Point>
+    <Point>
+      <value>172.5,0,0</value>
+    </Point>
+    <Point>
+      <value>162,0,0</value>
+    </Point>
+
+
+		<Point>
+			<value>214.5,0,0</value>
+       </Point>
+      <Point>
+        <value>227,0,0</value>
+      </Point>
+      <Point>
+        <value>0,-12,0</value>
+      </Point>
+
+    <Point>
+      <value>227,0,0</value>
+    </Point>
+    <Point>
+      <value>227.7,0,0</value>
+    </Point>
+    <Point>
+      <value>0,-12,0</value>
+    </Point>
+
+    <Point>
+      <value>227.7,0,0</value>
+    </Point>
+    <Point>
+      <value>250,0,0</value>
+    </Point>
+    <Point>
+      <value>0,-15,-38</value>
+    </Point>
+
+    <Point>
+      <value>250,0,0</value>
+    </Point>
+    <Point>
+      <value>256.5,0,0</value>
+    </Point>
+    <Point>
+      <value>0,-12,0</value>
+    </Point>
+
+    <Point>
+      <value>272,0,0</value>
+    </Point>
+    <Point>
+      <value>300,0,0</value>
+    </Point>
+    <Point>
+      <value>287.5,0,0</value>
+    </Point>
+
+    <Point>
+      <value>315,0,0</value>
+    </Point>
+    <Point>
+      <value>336.3,0,0</value>
+    </Point>
+    <Point>
+      <value>325.5,0,-49</value>
+    </Point>
+
+    <Point>
+      <value>336.3,-5.5,0</value>
+    </Point>
+    <Point>
+      <value>365.5,10,0</value>
+    </Point>
+    <Point>
+      <value>0,0,0</value>
+    </Point>
+    
+
+    <Point>
+      <value>365.5,-19,0</value>
+    </Point>
+    <Point>
+      <value>390,-5.5,0</value>
+    </Point>
+    <Point>
+      <value>375.5,-15,-47</value>
+    </Point>
+
+    <Point>
+      <value>357,-25.5,0</value>
+    </Point>
+    <Point>
+      <value>375.5,-19,0</value>
+    </Point>
+    <Point>
+      <value>375.5,-15,-47</value>
+    </Point>
+
+    <Point>
+      <value>375.5,-25.5,0</value>
+    </Point>
+    <Point>
+      <value>391,-19,0</value>
+    </Point>
+    <Point>
+      <value>0,-15,0</value>
+    </Point>
+
+    <Point>
+      <value>391,-25,0</value>
+    </Point>
+    <Point>
+      <value>410.5,-5,0</value>
+    </Point>
+    <Point>
+      <value>0,-15,0</value>
+    </Point>
+    
+    <Point>
+      <value>410.5,-25,0</value>
+    </Point>
+    <Point>
+      <value>427,-5,0</value>
+    </Point>
+    <Point>
+      <value>425,-15,0</value>
+    </Point>
+
+    <Point>
+      <value>427,-25,0</value>
+    </Point>
+    <Point>
+      <value>452,-5,0</value>
+    </Point>
+    <Point>
+      <value>0,-15,0</value>
+    </Point>
+
+    <Point>
+      <value>452,-25,0</value>
+    </Point>
+    <Point>
+      <value>489,-4.2,0</value>
+    </Point>
+    <Point>
+      <value>466,-12.5,-51</value>
+    </Point>
+
+    <Point>
+      <value>450,-5,0</value>
+    </Point>
+    <Point>
+      <value>458.8,10,0</value>
+    </Point>
+    <Point>
+      <value>0,0,0</value>
+    </Point>
+
+    <Point>
+      <value>458.8,0.1,0</value>
+    </Point>
+    <Point>
+      <value>489,10,0</value>
+    </Point>
+    <Point>
+      <value>0,8.5,0</value>
+    </Point>
+
+	<Point>
+		<value>463,0.1,0</value>
+	</Point>
+	<Point>
+		<value>478.5,25,0</value>
+	</Point>
+	<Point>
+		<value>480,10.5,-53</value>
+	</Point>
+
+    <Point>
+      <value>478.5,13.5,0</value>
+    </Point>
+    <Point>
+      <value>488,25,0</value>
+    </Point>
+    <Point>
+      <value>480,10.5,-53</value>
+    </Point>
+
+    <Point>
+      <value>488,13.5,0</value>
+    </Point>
+    <Point>
+      <value>507.3,25,0</value>
+    </Point>
+    <Point>
+      <value>489,10.5,-53</value>
+    </Point>
+
+    <Point>
+      <value>488,13.5,0</value>
+    </Point>
+    <Point>
+      <value>507.3,25,0</value>
+    </Point>
+    <Point>
+      <value>489,10.5,-53</value>
+    </Point>
+
+    <Point>
+      <value>478.5,0.1,0</value>
+    </Point>
+    <Point>
+      <value>507.3,13.5,0</value>
+    </Point>
+    <Point>
+      <value>489,10.5,-53</value>
+    </Point>
+
+    <Point>
+      <value>507.3,0.1,0</value>
+    </Point>
+    <Point>
+      <value>700,13.5,0</value>
+    </Point>
+    <Point>
+      <value>0,12,0</value>
+    </Point>
+
+   
+    
+  </Points>
+  
+  
+</root>

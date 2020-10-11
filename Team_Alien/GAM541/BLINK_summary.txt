@@ -1,0 +1,11 @@
+BLINK (Puzzle Platformer)
+
+BLINK is a 2D puzzle Platformer where the main mechanic is teleporting.
+You play as a cute little alien solving puzzles.
+You dont just avoid enemies or kill them but you actually use them to solve puzzles for to progress.
+
+Zheng Dou - Graphics programmer
+Vasilis Fezoulidis - Producer, Design, AI, Tools, Gameplay programmer
+Sree Harsha Kalangi - Audio, Gameplay,Physics programmer, Design
+Santosh Shedbalkar - Tech Lead, Engine Programmer
+

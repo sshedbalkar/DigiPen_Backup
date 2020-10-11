@@ -1,0 +1,21 @@
+Alien Main...
+loading assets...
+compiling shaders...
+Opening Camera xml file: SmartCamera.xml
+Opening CheckPoints xml file: CheckPoints.xml
+Loading Sounds...
+Level 1: Load
+Opening Game Settings data file: Objects\gameSettings.xml
+Level_1: init
+Opening Level file: Objects\Level_0.xml
+M Pressed
+Level 1: Free
+Cleared Game logic data
+Level 1: Unload
+Level_2: Load
+Opening Game Settings data file: Objects\gameSettings.xml
+Level_2: init
+Opening Level file: Objects\Level_0.xml
+Level 2: Free
+Cleared Game logic data
+Level 2: Unload

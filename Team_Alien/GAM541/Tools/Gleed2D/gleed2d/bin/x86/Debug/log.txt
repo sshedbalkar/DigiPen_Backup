@@ -1,0 +1,17 @@
+4/15/2012 00:09:57.465 - Log File created.
+4/15/2012 00:09:57.473 - Application started.
+4/15/2012 00:09:57.807 - Creating Game1 object.
+4/15/2012 00:09:57.865 - Game1 creation started.
+4/15/2012 00:09:57.873 - Creating Winform.
+4/15/2012 00:09:57.966 - Winform created.
+4/15/2012 00:09:57.967 - Game1 creation ended.
+4/15/2012 00:09:58.029 - Creating Editor object.
+4/15/2012 00:09:58.033 - Editor creation started.
+4/15/2012 00:09:58.034 - Loading Resources.
+4/15/2012 00:09:58.076 - Resources loaded.
+4/15/2012 00:09:58.077 - Loading Settings.
+4/15/2012 00:09:58.238 - Settings loaded.
+4/15/2012 00:09:58.238 - Creating new root.
+4/15/2012 00:09:58.414 - New root created.
+4/15/2012 00:09:58.415 - Editor creation ended.
+4/15/2012 00:10:01.051 - Application ended.

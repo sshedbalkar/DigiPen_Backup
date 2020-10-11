@@ -1,0 +1,23 @@
+﻿Build started 3/8/2013 9:42:04 PM.
+     1>Project "E:\Work_Work\Backup\SVN\Team\Team_Alien\test\MemMgr\MemMgr_Test\Test1\Test1\Test1.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Test1.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>e:\work_work\backup\svn\team\team_alien\test\memmgr\memmgr_test\test1\test1\main.cpp(13): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Work_Work\Backup\SVN\Team\Team_Alien\test\MemMgr\MemMgr_Test\Test1\Debug\Test1.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Test1.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Work_Work\Backup\SVN\Team\Team_Alien\test\MemMgr\MemMgr_Test\Test1\Debug\Test1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Work_Work\Backup\SVN\Team\Team_Alien\test\MemMgr\MemMgr_Test\Test1\Debug\Test1.lib" /MACHINE:X86 Debug\Main.obj
+         Debug\TestClass1.obj
+         LINK : E:\Work_Work\Backup\SVN\Team\Team_Alien\test\MemMgr\MemMgr_Test\Test1\Debug\Test1.exe not found or not built by the last incremental link; performing full link
+         Test1.vcxproj -> E:\Work_Work\Backup\SVN\Team\Team_Alien\test\MemMgr\MemMgr_Test\Test1\Debug\Test1.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\Work_Work\Backup\SVN\Team\Team_Alien\test\MemMgr\MemMgr_Test\Test1\Debug\Test1.exe;#1" /manifest Debug\Test1.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Test1.unsuccessfulbuild".
+         Touching "Debug\Test1.lastbuildstate".
+     1>Done Building Project "E:\Work_Work\Backup\SVN\Team\Team_Alien\test\MemMgr\MemMgr_Test\Test1\Test1\Test1.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.73

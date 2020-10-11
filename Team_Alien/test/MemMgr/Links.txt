@@ -1,0 +1,4 @@
+http://www.drdobbs.com/cpp/improving-performance-with-custom-pool-a/184406243
+http://bitsquid.blogspot.com/2010/09/custom-memory-allocation-in-c.html
+http://www.swedishcoding.com/2008/08/31/are-we-out-of-memory/
+http://www.flounder.com/memory_allocation.htm

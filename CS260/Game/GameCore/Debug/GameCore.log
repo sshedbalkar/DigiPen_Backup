@@ -1,0 +1,17 @@
+﻿Build started 7/26/2012 2:09:17 PM.
+     1>Project "E:\Work_Work\Backup\SVN\Team\CS260\Game\GameCore\GameCore.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\GameCore.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Lib:
+         All outputs are up-to-date.
+         GameCore.vcxproj -> E:\Work_Work\Backup\SVN\Team\CS260\Game\Debug\GameCore.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\GameCore.unsuccessfulbuild".
+         Touching "Debug\GameCore.lastbuildstate".
+     1>Done Building Project "E:\Work_Work\Backup\SVN\Team\CS260\Game\GameCore\GameCore.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.04

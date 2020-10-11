@@ -1,0 +1,254 @@
+﻿Build started 10/6/2012 3:59:03 PM.
+     1>Project "E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\AlienEngine.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\AlienEngine.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\source\graphics" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source\Archetype.cpp source\Audio.cpp source\BasicGlues.cpp source\basicLevels.cpp source\camera.cpp source\cmd\cmd.cpp source\Collisions.cpp source\ComponentRegistration.cpp source\Contacts.cpp source\ForceGenerator.cpp source\groupSelection.cpp source\GSM.cpp source\LevelEditor.cpp source\LoadLevelClass.cpp source\Body.cpp source\Collision.cpp source\Composition.cpp source\Core.cpp source\Factory.cpp source\FilePath.cpp source\GameData.cpp source\GameLogic.cpp source\logicHierarchy.cpp source\luaLibrary.cpp source\Matrix3.cpp source\Matrix4.cpp source\Particle.cpp source\ParticleContacts.cpp source\ParticleForceGenerator.cpp source\ParticleLinks.cpp source\ParticleWorld.cpp source\PathHelper.cpp source\Physics.cpp source\Precompiled.cpp source\Quaternion.cpp source\Resolution.cpp source\resources.cpp source\RigidBody.cpp source\scriptComponent.cpp source\scriptEngine.cpp source\StoreMessage.cpp source\text.cpp source\TextSerialization.cpp source\Transform.cpp source\Utility.cpp source\Vector3.cpp source\WindowsSystem.cpp source\main.cpp source\XMLSerialization.cpp
+         XMLSerialization.cpp
+         main.cpp
+         WindowsSystem.cpp
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\windowssystem.cpp(59): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         Vector3.cpp
+         Utility.cpp
+         Transform.cpp
+         TextSerialization.cpp
+         text.cpp
+         StoreMessage.cpp
+         scriptEngine.cpp
+         scriptComponent.cpp
+         RigidBody.cpp
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\rigidbody.cpp(570): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\rigidbody.cpp(582): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\rigidbody.cpp(620): warning C4060: switch statement contains no 'case' or 'default' labels
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\rigidbody.cpp(658): warning C4244: 'argument' : conversion from 'Framework::real' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\rigidbody.cpp(658): warning C4244: 'argument' : conversion from 'Framework::real' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\rigidbody.cpp(658): warning C4244: 'argument' : conversion from 'Framework::real' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\rigidbody.cpp(659): warning C4244: 'argument' : conversion from 'Framework::real' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\rigidbody.cpp(659): warning C4244: 'argument' : conversion from 'Framework::real' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\rigidbody.cpp(659): warning C4244: 'argument' : conversion from 'Framework::real' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\rigidbody.cpp(659): warning C4244: 'argument' : conversion from 'Framework::real' to 'FLOAT', possible loss of data
+         resources.cpp
+         Resolution.cpp
+         Quaternion.cpp
+         Precompiled.cpp
+         Compiling Precompiled Header File...
+         Physics.cpp
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\physics.cpp(70): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\physics.cpp(79): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\physics.cpp(81): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\physics.cpp(85): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\physics.cpp(94): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\physics.cpp(96): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\physics.cpp(108): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\physics.cpp(112): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\physics.cpp(114): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\physics.cpp(117): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\physics.cpp(121): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\physics.cpp(123): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+         PathHelper.cpp
+         ParticleWorld.cpp
+         ParticleLinks.cpp
+         Generating Code...
+         Compiling...
+         ParticleForceGenerator.cpp
+         ParticleContacts.cpp
+         Particle.cpp
+         Matrix4.cpp
+         Matrix3.cpp
+         luaLibrary.cpp
+         logicHierarchy.cpp
+         GameLogic.cpp
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\gamelogic.cpp(181): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\gamelogic.cpp(187): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\gamelogic.cpp(178): warning C4101: 'detect' : unreferenced local variable
+         GameData.cpp
+         FilePath.cpp
+         Factory.cpp
+         Core.cpp
+         Composition.cpp
+         Collision.cpp
+         Body.cpp
+         LoadLevelClass.cpp
+         LevelEditor.cpp
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\leveleditor.cpp(272): warning C4482: nonstandard extension used: enum 'Framework::TweakBarControl::MyEnum' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\leveleditor.cpp(274): warning C4482: nonstandard extension used: enum 'Framework::TweakBarControl::MyEnum' used in qualified name
+         GSM.cpp
+         groupSelection.cpp
+         ForceGenerator.cpp
+         Generating Code...
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\leveleditor.cpp(267): warning C4715: 'Framework::TweakBarControl::GetStringFromEnum' : not all control paths return a value
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\leveleditor.cpp(275): warning C4715: 'Framework::TweakBarControl::GetEnumFromString' : not all control paths return a value
+         Compiling...
+         Contacts.cpp
+         ComponentRegistration.cpp
+         Collisions.cpp
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\collisions.cpp(24): warning C4060: switch statement contains no 'case' or 'default' labels
+         cmd.cpp
+         camera.cpp
+         basicLevels.cpp
+         BasicGlues.cpp
+         Audio.cpp
+         Archetype.cpp
+         Generating Code...
+     1>e:\work_work\backup\svn\team\team_alien\gam 550_old\alienengine\source\basicglues.cpp(530): warning C4715: 'Framework::BasicGlues::GroupForEach' : not all control paths return a value
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /l"0x0409" /nologo /fo"Debug\AlienEngine.res" AlienEngine.rc 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\AlienEngine.exe.embed.manifest.res" Debug\AlienEngine_manifest.rc 
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\AlienEngine.exe" /INCREMENTAL /NOLOGO dxgi.lib dxerr.lib d3d11.lib d3dx10.lib d3dx11.lib fmodex_vc.lib winmm.lib wininet.lib luabuild.lib Graphics_Debug.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\AlienEngine.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\AlienEngine.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\AlienEngine.lib" /MACHINE:X86 Debug\AlienEngine.res
+         Debug\AlienEngine.exe.embed.manifest.res
+         Debug\Archetype.obj
+         Debug\Audio.obj
+         Debug\BasicGlues.obj
+         Debug\basicLevels.obj
+         Debug\camera.obj
+         Debug\cmd.obj
+         Debug\Collisions.obj
+         Debug\ComponentRegistration.obj
+         Debug\Contacts.obj
+         Debug\ForceGenerator.obj
+         Debug\groupSelection.obj
+         Debug\GSM.obj
+         Debug\LevelEditor.obj
+         Debug\LoadLevelClass.obj
+         Debug\Body.obj
+         Debug\Collision.obj
+         Debug\Composition.obj
+         Debug\Core.obj
+         Debug\Factory.obj
+         Debug\FilePath.obj
+         Debug\GameData.obj
+         Debug\GameLogic.obj
+         Debug\logicHierarchy.obj
+         Debug\luaLibrary.obj
+         Debug\Matrix3.obj
+         Debug\Matrix4.obj
+         Debug\Particle.obj
+         Debug\ParticleContacts.obj
+         Debug\ParticleForceGenerator.obj
+         Debug\ParticleLinks.obj
+         Debug\ParticleWorld.obj
+         Debug\PathHelper.obj
+         Debug\Physics.obj
+         Debug\Precompiled.obj
+         Debug\Quaternion.obj
+         Debug\Resolution.obj
+         Debug\resources.obj
+         Debug\RigidBody.obj
+         Debug\scriptComponent.obj
+         Debug\scriptEngine.obj
+         Debug\StoreMessage.obj
+         Debug\text.obj
+         Debug\TextSerialization.obj
+         Debug\Transform.obj
+         Debug\Utility.obj
+         Debug\Vector3.obj
+         Debug\WindowsSystem.obj
+         Debug\main.obj
+         Debug\XMLSerialization.obj
+     1>luabuild.lib(lapi.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lauxlib.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lbaselib.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lcode.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(ldblib.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(ldebug.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(ldo.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(ldump.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lfunc.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lgc.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(linit.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(liolib.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(llex.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lmathlib.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lmem.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(loadlib.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lobject.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lopcodes.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(loslib.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lparser.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lstate.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lstring.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lstrlib.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(ltable.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(ltablib.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(ltm.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lundump.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lvm.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>luabuild.lib(lzio.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Graphics_Debug.lib(animation.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Graphics_Debug.lib(AnimationController.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Graphics_Debug.lib(d3dmanager.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Graphics_Debug.lib(DXObject.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Graphics_Debug.lib(effect.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Graphics_Debug.lib(font.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Graphics_Debug.lib(graphics.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Graphics_Debug.lib(graphicsGlue.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Graphics_Debug.lib(GraphicsObject.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Graphics_Debug.lib(material.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Graphics_Debug.lib(renderer.obj) : warning LNK4204: 'E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+       Manifest:
+         Deleting file "Debug\AlienEngine.exe.embed.manifest".
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\AlienEngine.exe.embed.manifest" /manifest Debug\AlienEngine.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\AlienEngine.exe.embed.manifest.res" Debug\AlienEngine_manifest.rc 
+       LinkEmbedManifest:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\AlienEngine.exe" /INCREMENTAL /NOLOGO dxgi.lib dxerr.lib d3d11.lib d3dx10.lib d3dx11.lib fmodex_vc.lib winmm.lib wininet.lib luabuild.lib Graphics_Debug.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\AlienEngine.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\AlienEngine.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\AlienEngine.lib" /MACHINE:X86 Debug\AlienEngine.res
+         Debug\AlienEngine.exe.embed.manifest.res
+         Debug\Archetype.obj
+         Debug\Audio.obj
+         Debug\BasicGlues.obj
+         Debug\basicLevels.obj
+         Debug\camera.obj
+         Debug\cmd.obj
+         Debug\Collisions.obj
+         Debug\ComponentRegistration.obj
+         Debug\Contacts.obj
+         Debug\ForceGenerator.obj
+         Debug\groupSelection.obj
+         Debug\GSM.obj
+         Debug\LevelEditor.obj
+         Debug\LoadLevelClass.obj
+         Debug\Body.obj
+         Debug\Collision.obj
+         Debug\Composition.obj
+         Debug\Core.obj
+         Debug\Factory.obj
+         Debug\FilePath.obj
+         Debug\GameData.obj
+         Debug\GameLogic.obj
+         Debug\logicHierarchy.obj
+         Debug\luaLibrary.obj
+         Debug\Matrix3.obj
+         Debug\Matrix4.obj
+         Debug\Particle.obj
+         Debug\ParticleContacts.obj
+         Debug\ParticleForceGenerator.obj
+         Debug\ParticleLinks.obj
+         Debug\ParticleWorld.obj
+         Debug\PathHelper.obj
+         Debug\Physics.obj
+         Debug\Precompiled.obj
+         Debug\Quaternion.obj
+         Debug\Resolution.obj
+         Debug\resources.obj
+         Debug\RigidBody.obj
+         Debug\scriptComponent.obj
+         Debug\scriptEngine.obj
+         Debug\StoreMessage.obj
+         Debug\text.obj
+         Debug\TextSerialization.obj
+         Debug\Transform.obj
+         Debug\Utility.obj
+         Debug\Vector3.obj
+         Debug\WindowsSystem.obj
+         Debug\main.obj
+         Debug\XMLSerialization.obj
+         AlienEngine.vcxproj -> E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\Debug\AlienEngine.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\AlienEngine.unsuccessfulbuild".
+         Touching "Debug\AlienEngine.lastbuildstate".
+     1>Done Building Project "E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550_old\AlienEngine\AlienEngine.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:46.14

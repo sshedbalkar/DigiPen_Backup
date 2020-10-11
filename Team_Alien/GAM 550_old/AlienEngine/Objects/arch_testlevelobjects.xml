@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <Archetypes>
+
+    <Archetype id ="sunlight" Name="sunlight">
+      <Components>
+        <Component Type="Camera">
+          <camera_position>0, 10, 3</camera_position>
+          <lookat_position>0,0,0</lookat_position>
+        </Component>
+        <Component Type="GraphicsComposition">
+          <material id="lightdirectional">
+            <direction>0.5,1.0,0.0</direction>
+          </material>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id ="tad" Name="tad">
+      <Components>
+        <Component Type ="Transform"/>
+        <Component Type="GraphicsComposition">
+          <flag>1</flag>
+          <material id="tad">
+            <color>1.0,0.0,0.0</color>
+          </material>
+        </Component>
+        <Component Type="AnimationController">
+          <default>Take 001</default>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id ="ufo" Name="ufo">
+      <Components>
+        <Component Type ="Transform"/>
+        <Component Type="GraphicsComposition">
+          <flag>1</flag>
+          <material id="ufo">
+          </material>
+        </Component>
+      </Components>
+    </Archetype>
+
+  </Archetypes>
+</root>

@@ -1,0 +1,1331 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<Settings>
+	</Settings>
+	<Archetypes>
+	   <Archetype id="arc_1" Name="Hero">
+			<Components>
+        <Component Type="ParticleEmitter">
+          <emitter>
+            <id>teleporting_effect</id>
+            <System>square</System>
+            <Activated>0</Activated>
+            <MaxParticles>800</MaxParticles>
+            <BottomLeftFront>0.35f, 0.2f, 0.0f</BottomLeftFront>
+            <TopRightBack>0.35f, 0.3f, 0.0f</TopRightBack>
+            <InitialVelocity>0.0f, -0.7f, 0.0f</InitialVelocity>
+            <VelocityDeviation>0.0f, 0.0f, 0.0f</VelocityDeviation>
+            <GlobalRotationVelocity>0.0,-20.0,0.0</GlobalRotationVelocity>
+            <Acceleration>0.0,-0.5,0.0</Acceleration>
+            <RandomRotation>1</RandomRotation>
+            <ParticlesPerMillisecond>0.3f</ParticlesPerMillisecond>
+            <LifeSpan>1.5f</LifeSpan>
+            <LifeSpanDeviation>0.0f</LifeSpanDeviation>
+            <Interval>0.0f</Interval>
+            <ParticleRadius>0.1f</ParticleRadius>
+            <Color>1.0,1.0,1.0,0.6</Color>
+            <BlendMethod>None</BlendMethod>
+            <Shrinking>1</Shrinking>
+            <Rotating>1</Rotating>
+            <FilterFlag>0</FilterFlag>
+          </emitter>
+          <emitter>
+            <id>dust_effect</id>
+            <System>square</System>
+            <Activated>0</Activated>
+            <MaxParticles>3000</MaxParticles>
+            <BottomLeftFront>-0.1f, -0.5f, 0.0f</BottomLeftFront>
+            <TopRightBack>0.1f, -0.5f, 0.0f</TopRightBack>
+            <InitialVelocity>0.0f, -0.8f, 0.0f</InitialVelocity>
+            <VelocityDeviation>3.0f, 0.2f, 0.0f</VelocityDeviation>
+            <GlobalRotationVelocity>0.0,0.0,0.0</GlobalRotationVelocity>
+            <Acceleration>0.0,20.0,0.0</Acceleration>
+            <RandomRotation>1</RandomRotation>
+            <ParticlesPerMillisecond>0.7f</ParticlesPerMillisecond>
+            <LifeSpan>0.2f</LifeSpan>
+            <LifeSpanDeviation>0.0f</LifeSpanDeviation>
+            <Interval>0.0f</Interval>
+            <ParticleRadius>0.03f</ParticleRadius>
+            <Color>0.7,0.7,0.7,0.0</Color>
+            <BlendMethod>None</BlendMethod>
+            <Shrinking>1</Shrinking>
+            <Rotating>1</Rotating>
+            <FilterFlag>32</FilterFlag>
+          </emitter>
+        </Component>
+		
+				<Component Type ="MeshInstance">
+					<id>hero</id>
+          <FilterFlag>77</FilterFlag>
+          <default_animation>hero_walking</default_animation>
+				</Component>
+				 <Component Type="Transform">
+					<Position Type="Vector3" Description="">
+						<value>0,0,0</value>
+					</Position>
+					<Rotation Type="float" Description="">
+						<value>0</value>
+					</Rotation>
+					<Scale Type="Vector3" Description="">
+						<value>1,1,1</value>
+					</Scale>
+				 </Component>
+				<Component Type="Body">
+					<Mass  Type="float" Description="">
+						 <value>0.5</value>
+					</Mass>
+					<Restitution Type="float" Description="">
+						<value>0.00001f</value>
+					</Restitution>
+					<Friction  Type="float" Description="">
+						<value>0.3</value>
+					</Friction>
+					<Shape type="string">
+						<value>Box</value>
+					</Shape>
+					<DimensionHalf Type="float" Description="">
+						<value>0.4,0.5</value>
+					</DimensionHalf>
+				</Component>
+        <Component Type="ScriptManager">
+          <logic id="BasicMovementEffect"/>
+          <logic id="HeroAnimationEffect"/>
+          <logic id="HeroFacialEffect"/>
+        </Component>
+			</Components>
+		</Archetype>
+		<Archetype id ="boxOfDeath" Name="Invinsible Box Of Death">
+			<Components>
+
+			<Component Type ="Transform">
+				  <Position Type="Vector3" Description="">
+					<value>0,0,0</value>
+				  </Position>
+				  <Rotation Type="float" Description="">
+					<value>0</value>
+				  </Rotation>
+			</Component>
+				<Component Type="Body">
+					<Mass  Type="float" Description="">
+						<value>0</value>
+					</Mass>
+					<Restitution Type="float" Description="">
+						<value>0.00001</value>
+					</Restitution>
+					<Friction  Type="float" Description="">
+						<value>0.3</value>
+					</Friction>
+					<Shape type="string">
+						<value>Box</value>
+					</Shape>
+					<DimensionHalf Type="float" Description="">
+						<value>0.5,0.5</value>
+					</DimensionHalf>
+				</Component>
+			</Components>
+		</Archetype>
+		
+		<Archetype id ="specialEndGAme" Name="Endgamespecial">
+			<Components>
+		<Component Type="ScriptManager">
+          <logic id="EndGameActions"/>
+       </Component>
+			<Component Type ="Transform">
+				  <Position Type="Vector3" Description="">
+					<value>0,0,0</value>
+				  </Position>
+				  <Rotation Type="float" Description="">
+					<value>0</value>
+				  </Rotation>
+			</Component>
+				
+			</Components>
+		</Archetype>
+		
+		
+    <Archetype id ="enemy_1" Name="enemy_normal">
+			<Components>
+        <Component Type ="MeshInstance">
+          <id>enemy</id>
+          <FilterFlag>13</FilterFlag>
+          <default_animation>enemy_walking</default_animation>
+        </Component>
+        <Component Type="ScriptManager">
+          <logic id="BasicMovementEffect"/>
+          <logic id="EnemyAnimationEffect"/>
+          <logic id="EnemyFacialEffect"/>
+        </Component>
+				<Component Type ="Transform">
+					<Position Type="Vector3" Description="">
+						<value>0,0,0</value>
+					</Position>
+					<Rotation Type="float" Description="">
+						<value>0</value>
+					</Rotation>
+				</Component>
+				<Component Type="Body">
+					<Mass  Type="float" Description="">
+						<value>0.5</value>
+					</Mass>
+					<Restitution Type="float" Description="">
+						<value>0.00001</value>
+					</Restitution>
+					<Friction  Type="float" Description="">
+						<value>0.3</value>
+					</Friction>
+					<Shape type="string">
+						<value>Box</value>
+					</Shape>
+					<DimensionHalf Type="float" Description="">
+						<value>0.5,0.5</value>
+					</DimensionHalf>
+				</Component>
+				<Component Type="InteractiveObjProperties">
+					<ActivatedBySecondaryObjectIds  Type="string" Description="">
+						 <value>0,0,0,0</value>
+					</ActivatedBySecondaryObjectIds>
+					<SecondaryObjectId Type="int" Description="">
+						<value>0</value>
+					</SecondaryObjectId>
+					<ActivatesObjectWithSecondaryId Type="string" Description="">
+						<value>0</value>
+					</ActivatesObjectWithSecondaryId>
+					<ResetOnLoad Type="string" Description="">
+						<value>0</value>
+					</ResetOnLoad>
+			</Component>
+			</Components>
+		</Archetype>
+	
+    <Archetype id ="boss_1" Name="boss_1">
+			<Components>
+        <Component Type="ParticleEmitter">
+          <emitter>
+            <id>teleporting_effect</id>
+            <System>square</System>
+            <Activated>0</Activated>
+            <MaxParticles>800</MaxParticles>
+            <BottomLeftFront>0.35f, 0.2f, 0.0f</BottomLeftFront>
+            <TopRightBack>0.35f, 0.3f, 0.0f</TopRightBack>
+            <InitialVelocity>0.0f, -0.7f, 0.0f</InitialVelocity>
+            <VelocityDeviation>0.0f, 0.0f, 0.0f</VelocityDeviation>
+            <GlobalRotationVelocity>0.0,-20.0,0.0</GlobalRotationVelocity>
+            <Acceleration>0.0,-0.5,0.0</Acceleration>
+            <RandomRotation>1</RandomRotation>
+            <ParticlesPerMillisecond>0.3f</ParticlesPerMillisecond>
+            <LifeSpan>1.5f</LifeSpan>
+            <LifeSpanDeviation>0.0f</LifeSpanDeviation>
+            <Interval>0.0f</Interval>
+            <ParticleRadius>0.1f</ParticleRadius>
+            <Color>1.0,1.0,1.0,0.6</Color>
+            <BlendMethod>None</BlendMethod>
+            <GravityAffecting>0</GravityAffecting>
+            <Shrinking>1</Shrinking>
+            <Rotating>1</Rotating>
+            <FilterFlag>0</FilterFlag>
+          </emitter>
+        </Component>
+        <Component Type ="MeshInstance">
+          <id>boss</id>
+          <FilterFlag>13</FilterFlag>
+          <default_animation>boss_standing</default_animation>
+        </Component>
+        <Component Type="ScriptManager">
+          <logic id="BossMovementEffect"/>
+          <logic id="BossAnimationEffect"/>
+          <logic id="BossFacialEffect"/>
+        </Component>
+				<Component Type ="Transform">
+					<Position Type="Vector3" Description="">
+						<value>0,0,0</value>
+					</Position>
+					<Rotation Type="float" Description="">
+						<value>0</value>
+					</Rotation>
+				</Component>
+				<Component Type="Body">
+					<Mass  Type="float" Description="">
+						<value>0.5</value>
+					</Mass>
+					<Restitution Type="float" Description="">
+						<value>0.00001</value>
+					</Restitution>
+					<Friction  Type="float" Description="">
+						<value>0.3</value>
+					</Friction>
+					<Shape type="string">
+						<value>Box</value>
+					</Shape>
+					<DimensionHalf Type="float" Description="">
+						<value>0.5,0.5</value>
+					</DimensionHalf>
+				</Component>
+				
+			</Components>
+		</Archetype>
+   
+    <Archetype id ="platform_test0" Name="platform_type0">
+      <Components>
+          <Component Type ="VisualPlatform">
+            <Box>GreenPlatform</Box>
+          <Top>grass</Top>
+            <Bottom>none</Bottom>
+            <Shininess>50</Shininess>
+            <TextureMethod>6.0</TextureMethod>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>0</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.3</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+					<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+      </Components>
+    </Archetype>
+	
+	<Archetype id ="platform_1" Name="platform_Bricks">
+      <Components>
+          <Component Type ="VisualPlatform">
+            <Box>BrickPlatform</Box>
+            <Top>none</Top>
+            <Bottom>none</Bottom>
+            <Shininess>50</Shininess>
+            <TextureMethod>3.0</TextureMethod>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>0</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.3</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+					<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+      </Components>
+    </Archetype>
+	     
+	<Archetype id ="platform_2" Name="platform_type2(orange)">
+      <Components>
+          <Component Type ="VisualPlatform">
+            <Box>OrangePlatform</Box>
+			<Top>none</Top>
+            <Bottom>none</Bottom>
+            <Shininess>50</Shininess>
+            <TextureMethod>6.0</TextureMethod>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>0</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.3</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+					<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id ="platform_3" Name="platform_GreenWithoutGrass">
+      <Components>
+        <Component Type ="VisualPlatform">
+          <Box>GreenPlatform</Box>
+          <Top>none</Top>
+          <Bottom>none</Bottom>
+          <Shininess>50</Shininess>
+          <TextureMethod>6.0</TextureMethod>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Body">
+          <Mass  Type="float" Description="">
+            <value>0</value>
+          </Mass>
+          <Restitution Type="float" Description="">
+            <value>0.3</value>
+          </Restitution>
+          <Friction  Type="float" Description="">
+            <value>0.3</value>
+          </Friction>
+          <Shape type="string">
+            <value>Box</value>
+          </Shape>
+          <DimensionHalf Type="float" Description="">
+            <value>0.5,0.5</value>
+          </DimensionHalf>
+        </Component>
+      </Components>
+    </Archetype>
+	
+	<Archetype id ="platform_4" Name="platform_GreenWithoutGrassWihoutFlowers">
+      <Components>
+        <Component Type ="VisualPlatform">
+          <Box>GreenPlatformWF</Box>
+          <Top>none</Top>
+          <Bottom>none</Bottom>
+          <Shininess>50</Shininess>
+          <TextureMethod>6.0</TextureMethod>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Body">
+          <Mass  Type="float" Description="">
+            <value>0</value>
+          </Mass>
+          <Restitution Type="float" Description="">
+            <value>0.3</value>
+          </Restitution>
+          <Friction  Type="float" Description="">
+            <value>0.3</value>
+          </Friction>
+          <Shape type="string">
+            <value>Box</value>
+          </Shape>
+          <DimensionHalf Type="float" Description="">
+            <value>0.5,0.5</value>
+          </DimensionHalf>
+        </Component>
+      </Components>
+    </Archetype>
+	
+	 	
+	
+	 <Archetype id ="deathplatform_0" Name="deathplatform">
+      <Components>
+        <Component Type ="VisualPlatform">
+          <Box>BlackRockyPlatform</Box>
+          <Top>spikes</Top>
+          <Bottom>none</Bottom>
+          <Shininess>50</Shininess>
+          <TextureMethod>6.6</TextureMethod>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Body">
+          <Mass  Type="float" Description="">
+            <value>0</value>
+          </Mass>
+          <Restitution Type="float" Description="">
+            <value>0.3</value>
+          </Restitution>
+          <Friction  Type="float" Description="">
+            <value>0.3</value>
+          </Friction>
+          <Shape type="string">
+            <value>Box</value>
+          </Shape>
+          <DimensionHalf Type="float" Description="">
+            <value>0.5,0.5</value>
+          </DimensionHalf>
+        </Component>
+      </Components>
+    </Archetype>
+	
+    <Archetype id ="mirror_0" Name="Mirror">
+			<Components>
+				<Component Type ="VisualPlatform">
+					<Box>ParticleSquareWhite</Box>
+					<Bottom>none</Bottom>
+          <BloomIntensity>0.5</BloomIntensity>
+          <Flag>0</Flag>
+          <TextureMethod>-1.0</TextureMethod>
+				</Component>
+        <Component Type="ParticleEmitter">
+          <emitter>
+            <id>mirror</id>
+            <System>square</System>
+            <MaxParticles>500</MaxParticles>
+            <BottomLeftFront>-0.6f, -0.45f, 0.0f</BottomLeftFront>
+            <TopRightBack>0.6f, 0.45f, 0.0f</TopRightBack>
+            <InitialVelocity>0.0f, 0.0f, 0.0f</InitialVelocity>
+            <VelocityDeviation>1.0f, 0.2f, 0.0f</VelocityDeviation>
+            <RandomRotation>1</RandomRotation>
+            <ParticlesPerMillisecond>0.6f</ParticlesPerMillisecond>
+            <LifeSpan>0.1f</LifeSpan>
+            <LifeSpanDeviation>0.1f</LifeSpanDeviation>
+            <Interval>0.0125f</Interval>
+            <ParticleRadius>0.05f</ParticleRadius>
+            <Color>0.7,0.7,0.2,2.0</Color>
+            <BlendMethod>None</BlendMethod>
+            <GravityAffecting>0</GravityAffecting>
+            <Shrinking>1</Shrinking>
+            <Rotating>1</Rotating>
+            <FilterFlag>0</FilterFlag>
+          </emitter>
+        </Component>
+				<Component Type ="Transform">
+					<Position Type="Vector3" Description="">
+						<value>0,0,0</value>
+					</Position>
+					<Rotation Type="float" Description="">
+						<value>0</value>
+					</Rotation>
+				</Component>
+				<Component Type="Body">
+					<Mass  Type="float" Description="">
+						<value>0</value>
+					</Mass>
+					<Restitution Type="float" Description="">
+						<value>0.3</value>
+					</Restitution>
+					<Friction  Type="float" Description="">
+						<value>0.3</value>
+					</Friction>
+					<Shape type="string">
+						<value>Box</value>
+					</Shape>
+					<DimensionHalf Type="float" Description="">
+						<value>0.5,0.5</value>
+					</DimensionHalf>
+				</Component>
+			</Components>
+		</Archetype>
+
+
+    <Archetype id ="mirror_1" Name="Mirror1">
+      <Components>
+        <Component Type ="VisualPlatform">
+          <Box>ParticleSquareWhite</Box>
+          <Bottom>none</Bottom>
+          <BloomIntensity>0.5</BloomIntensity>
+          <Flag>0</Flag>
+          <TextureMethod>-1.0</TextureMethod>
+        </Component>
+        <Component Type="ParticleEmitter">
+          <emitter>
+            <id>mirror</id>
+            <System>square</System>
+            <MaxParticles>500</MaxParticles>
+            <BottomLeftFront>-0.5f, -0.5f, 0.0f</BottomLeftFront>
+            <TopRightBack>0.5f, 0.5f, 0.0f</TopRightBack>
+            <InitialVelocity>0.0f, 0.0f, 0.0f</InitialVelocity>
+            <VelocityDeviation>0.0f, 1.0f, 0.0f</VelocityDeviation>
+            <RandomRotation>1</RandomRotation>
+            <ParticlesPerMillisecond>0.6f</ParticlesPerMillisecond>
+            <LifeSpan>0.1f</LifeSpan>
+            <LifeSpanDeviation>0.1f</LifeSpanDeviation>
+            <Interval>0.0125f</Interval>
+            <ParticleRadius>0.05f</ParticleRadius>
+            <Color>0.7,0.7,0.2,2.0</Color>
+            <BlendMethod>None</BlendMethod>
+            <GravityAffecting>0</GravityAffecting>
+            <Shrinking>1</Shrinking>
+            <Rotating>1</Rotating>
+            <FilterFlag>0</FilterFlag>
+          </emitter>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Body">
+          <Mass  Type="float" Description="">
+            <value>0</value>
+          </Mass>
+          <Restitution Type="float" Description="">
+            <value>0.3</value>
+          </Restitution>
+          <Friction  Type="float" Description="">
+            <value>0.3</value>
+          </Friction>
+          <Shape type="string">
+            <value>Box</value>
+          </Shape>
+          <DimensionHalf Type="float" Description="">
+            <value>0.5,0.5</value>
+          </DimensionHalf>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id ="button_platform1" Name="Button_Platform">
+      <Components>
+          <Component Type ="VisualPlatform">
+          <Box>RedRockyPlatform</Box>
+           <Bottom>none</Bottom>
+            <TextureMethod>6.6</TextureMethod>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>0</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.3</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+				<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+		<Component Type="InteractiveObjProperties">
+			<ActivatedBySecondaryObjectIds  Type="string" Description="">
+				 <value>0,0,0,0</value>
+			</ActivatedBySecondaryObjectIds>
+			<SecondaryObjectId Type="int" Description="">
+				<value>0</value>
+			</SecondaryObjectId>
+			<ActivatesObjectWithSecondaryId Type="string" Description="">
+				<value>0</value>
+			</ActivatesObjectWithSecondaryId>
+			<ResetOnLoad Type="string" Description="">
+				<value>0</value>
+			</ResetOnLoad>
+		</Component>
+      </Components>
+    </Archetype>
+	
+    <Archetype id ="button_platform2" Name="Button_Platform2">
+      <Components>
+          <Component Type ="VisualPlatform">
+          <Box>BlueRockyPlatform</Box>
+           <Bottom>none</Bottom>
+            <TextureMethod>6.6</TextureMethod>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>0</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.3</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+				<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+		<Component Type="InteractiveObjProperties">
+			<ActivatedBySecondaryObjectIds  Type="string" Description="">
+				 <value>0,0,0,0</value>
+			</ActivatedBySecondaryObjectIds>
+			<SecondaryObjectId Type="int" Description="">
+				<value>0</value>
+			</SecondaryObjectId>
+			<ActivatesObjectWithSecondaryId Type="string" Description="">
+				<value>0</value>
+			</ActivatesObjectWithSecondaryId>
+			<ResetOnLoad Type="string" Description="">
+				<value>0</value>
+			</ResetOnLoad>
+		</Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id ="instruction_platform0" Name="instruction_platform0">
+      <Components>
+        <Component Type ="VisualPlatform">
+          <Box>InstructionPlatform0</Box>
+          <Top>none</Top>
+          <Bottom>none</Bottom>
+          <Shininess>50</Shininess>
+          <TextureMethod>-1.0</TextureMethod>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Body">
+          <Mass  Type="float" Description="">
+            <value>0</value>
+          </Mass>
+          <Restitution Type="float" Description="">
+            <value>0.3</value>
+          </Restitution>
+          <Friction  Type="float" Description="">
+            <value>0.3</value>
+          </Friction>
+          <Shape type="string">
+            <value>Box</value>
+          </Shape>
+          <DimensionHalf Type="float" Description="">
+            <value>0.5,0.5</value>
+          </DimensionHalf>
+        </Component>
+      </Components>
+    </Archetype>
+    
+    <Archetype id ="instruction_platform1" Name="instruction_platform1">
+      <Components>
+        <Component Type ="VisualPlatform">
+          <Box>InstructionPlatform1</Box>
+          <Top>none</Top>
+          <Bottom>none</Bottom>
+          <Shininess>50</Shininess>
+          <TextureMethod>-1.0</TextureMethod>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Body">
+          <Mass  Type="float" Description="">
+            <value>0</value>
+          </Mass>
+          <Restitution Type="float" Description="">
+            <value>0.3</value>
+          </Restitution>
+          <Friction  Type="float" Description="">
+            <value>0.3</value>
+          </Friction>
+          <Shape type="string">
+            <value>Box</value>
+          </Shape>
+          <DimensionHalf Type="float" Description="">
+            <value>0.5,0.5</value>
+          </DimensionHalf>
+        </Component>
+      </Components>
+    </Archetype>
+    
+    <Archetype id ="instruction_platform2" Name="instruction_platform2">
+      <Components>
+        <Component Type ="VisualPlatform">
+          <Box>InstructionPlatform20</Box>
+          <Top>none</Top>
+          <Bottom>none</Bottom>
+          <Shininess>50</Shininess>
+          <TextureMethod>-1.0</TextureMethod>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Body">
+          <Mass  Type="float" Description="">
+            <value>0</value>
+          </Mass>
+          <Restitution Type="float" Description="">
+            <value>0.3</value>
+          </Restitution>
+          <Friction  Type="float" Description="">
+            <value>0.3</value>
+          </Friction>
+          <Shape type="string">
+            <value>Box</value>
+          </Shape>
+          <DimensionHalf Type="float" Description="">
+            <value>0.5,0.5</value>
+          </DimensionHalf>
+        </Component>
+        <Component Type="ScriptManager">
+          <logic id="InstructionLogic"/>
+        </Component>
+      </Components>
+    </Archetype>
+    
+    <Archetype id ="door_0" Name="Door_1">
+      <Components>
+        <Component Type="ParticleEmitter">
+          <emitter>
+            <id>door</id>
+            <System>energy_field</System>
+            <MaxParticles>1000</MaxParticles>
+            <Color>1.0,0.7,0.5,1.0</Color>
+          </emitter>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>0</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.00001</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+				<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+		<Component Type="InteractiveObjProperties">
+			<ActivatedBySecondaryObjectIds  Type="string" Description="">
+				 <value>0,0,0,0</value>
+			</ActivatedBySecondaryObjectIds>
+			<SecondaryObjectId Type="int" Description="">
+				<value>0</value>
+			</SecondaryObjectId>
+			<ActivatesObjectWithSecondaryId Type="string" Description="">
+				<value>0</value>
+			</ActivatesObjectWithSecondaryId>
+			<ResetOnLoad Type="string" Description="">
+				<value>0</value>
+			</ResetOnLoad>
+		</Component>
+      </Components>
+    </Archetype>
+	
+    <Archetype id ="door_1" Name="Door_2">
+      <Components>
+        <Component Type="ParticleEmitter">
+          <emitter>
+            <id>door</id>
+            <System>energy_field</System>
+            <MaxParticles>1000</MaxParticles>
+            <Color>0.7,0.7,0.7,1.0</Color>
+          </emitter>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>0</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.00001</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+				<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+		<Component Type="InteractiveObjProperties">
+			<ActivatedBySecondaryObjectIds  Type="string" Description="">
+				 <value>0,0,0,0</value>
+			</ActivatedBySecondaryObjectIds>
+			<SecondaryObjectId Type="int" Description="">
+				<value>0</value>
+			</SecondaryObjectId>
+			<ActivatesObjectWithSecondaryId Type="string" Description="">
+				<value>0</value>
+			</ActivatesObjectWithSecondaryId>
+			<ResetOnLoad Type="string" Description="">
+					<value>0</value>
+			</ResetOnLoad>
+		</Component>
+      </Components>
+    </Archetype>
+	
+    <Archetype id ="pillar_0" Name="Pillar">
+      <Components>
+         <Component Type="MeshInstance">
+           <id>pillar</id>
+          <FilterFlag>37</FilterFlag>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>0</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.00001</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+				<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+		
+      </Components>
+    </Archetype>	
+	
+    <Archetype id ="mesh_test0" Name="mesh_test0">
+      <Components>
+        <Component Type ="MeshInstance">
+          <id>test</id>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+      </Components>
+    </Archetype>
+	
+    <Archetype id ="box_0" Name="Moving_Box">
+      <Components>
+          <Component Type ="VisualPlatform">
+          <Box>WoodTile</Box>
+           <Bottom>none</Bottom>
+            <Top>none</Top>
+            <Shininess>15</Shininess>
+            <TextureMethod>-1.0</TextureMethod>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>10000000</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.00001</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+					<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+		<Component Type="InteractiveObjProperties">
+			<ActivatedBySecondaryObjectIds  Type="string" Description="">
+				 <value>0,0,0,0</value>
+			</ActivatedBySecondaryObjectIds>
+			<SecondaryObjectId Type="int" Description="">
+				<value>0</value>
+			</SecondaryObjectId>
+			<ActivatesObjectWithSecondaryId Type="string" Description="">
+				<value>0</value>
+			</ActivatesObjectWithSecondaryId>
+			<ResetOnLoad Type="string" Description="">
+				<value>0</value>
+			</ResetOnLoad>
+		</Component>
+      </Components>
+    </Archetype>
+    
+    <Archetype id="particle_sun" Name="particle_sun">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="ParticleEmitter">
+          <emitter>
+            <id>sun</id>
+            <System>square</System>
+            <MaxParticles>1300</MaxParticles>
+            <BottomLeftFront>-0.0f, -0.0f, 0.0f</BottomLeftFront>
+            <TopRightBack>0.0f, 0.0f, 0.0f</TopRightBack>
+            <InitialVelocity>8.0f, 0.0f, 0.0f</InitialVelocity>
+            <VelocityDeviation>0.0f, 0.0f, 0.0f</VelocityDeviation>
+            <RandomRotation>1</RandomRotation>
+            <ParticlesPerMillisecond>0.3f</ParticlesPerMillisecond>
+            <LifeSpan>2.5f</LifeSpan>
+            <LifeSpanDeviation>0.5f</LifeSpanDeviation>
+            <Interval>0.0125f</Interval>
+            <ParticleRadius>4.0f</ParticleRadius>
+            <Color>1.0,0.95,0.06,1.0</Color>
+            <BlendMethod>None</BlendMethod>
+            <GravityAffecting>0</GravityAffecting>
+            <Shrinking>1</Shrinking>
+            <Rotating>1</Rotating>
+            <FilterFlag>0</FilterFlag>
+          </emitter>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="backdrop_sky_bright" Name="backdrop_sky">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Sprite">
+          <Texture>BackdropSkyBright</Texture>
+          <Type>scene</Type>
+          <Masked>false</Masked>
+          <FilterFlag>21</FilterFlag>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="skyline_box" Name="skyline_box">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="VisualPlatform">
+          <Box>none</Box>
+          <Top>skyline</Top>
+          <Bottom>none</Bottom>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="water_box" Name="water_box1">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="VisualPlatform">
+          <Box>none</Box>
+          <Top>water</Top>
+          <Bottom>none</Bottom>
+        </Component>
+
+        <Component Type="ScriptManager">
+          <logic id="RippleEffect"/>
+        </Component>
+
+      </Components>
+    </Archetype>
+    
+
+    <Archetype id="sprite_instruction_movement" Name="sprite_instruction_movement">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Sprite">
+          <Texture>InstructionMovement</Texture>
+          <Type>HUD</Type>
+          <Masked>true</Masked>
+          <FilterFlag>5</FilterFlag>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="sprite_instruction_jump" Name="sprite_instruction_jump">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Sprite">
+          <Texture>InstructionJump</Texture>
+          <Type>HUD</Type>
+          <Masked>true</Masked>
+          <FilterFlag>5</FilterFlag>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="sprite_instruction_point" Name="sprite_instruction_point">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Sprite">
+          <Texture>InstructionPoint</Texture>
+          <Type>HUD</Type>
+          <Masked>true</Masked>
+          <FilterFlag>5</FilterFlag>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="sprite_instruction_shoot" Name="sprite_instruction_shoot">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Sprite">
+          <Texture>InstructionShoot</Texture>
+          <Type>HUD</Type>
+          <Masked>true</Masked>
+          <FilterFlag>5</FilterFlag>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="sprite_instruction_teleport" Name="sprite_instruction_teleport">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Sprite">
+          <Texture>InstructionTeleport</Texture>
+          <Type>HUD</Type>
+          <Masked>true</Masked>
+          <FilterFlag>5</FilterFlag>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="sprite_logo" Name="sprite_logo">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Sprite">
+          <Texture>DigiPenLogo</Texture>
+          <Type>scene</Type>
+          <Masked>false</Masked>
+          <FilterFlag>0</FilterFlag>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="sprite_logo1" Name="sprite_logo1">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Sprite">
+          <Texture>TeamLogo</Texture>
+          <Type>scene</Type>
+          <Masked>false</Masked>
+          <FilterFlag>0</FilterFlag>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="sprite_endgame" Name="sprite_endgame">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Sprite">
+          <Texture>TheEnd</Texture>
+          <Type>scene</Type>
+          <Masked>false</Masked>
+          <FilterFlag>0</FilterFlag>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="sprite_credits" Name="sprite_credits">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="Sprite">
+          <Texture>Credits</Texture>
+          <Type>scene</Type>
+          <Masked>false</Masked>
+          <FilterFlag>0</FilterFlag>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="clouds" Name="clouds">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="ParticleEmitter">
+          <emitter>
+            <id>clouds</id>
+            <System>clouds</System>
+            <MaxParticles>4500</MaxParticles>
+            <RandomRotation>1</RandomRotation>
+            <ParticlesPerMillisecond>0.3f</ParticlesPerMillisecond>
+            <LifeSpan>2.5f</LifeSpan>
+            <LifeSpanDeviation>0.5f</LifeSpanDeviation>
+            <Interval>0.0125f</Interval>
+            <ParticleRadius>4.0f</ParticleRadius>
+            <Color>0.86,0.68,0.06,1.0</Color>
+            <BlendMethod>None</BlendMethod>
+            <GravityAffecting>0</GravityAffecting>
+            <Shrinking>1</Shrinking>
+            <Rotating>1</Rotating>
+            <FilterFlag>0</FilterFlag>
+          </emitter>
+        </Component>
+      </Components>
+    </Archetype>
+
+  </Archetypes>	
+</root>

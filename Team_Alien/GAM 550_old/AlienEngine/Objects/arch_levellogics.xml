@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<Archetypes>
+
+    <Archetype id ="leveltest" >
+      <Components>
+        <Component Type="Camera">
+          <lookat_position>0,0,0</lookat_position>
+          <camera_position>0, 3, -5</camera_position>
+        </Component>
+        <Component Type="ScriptComponent">
+          <script id="pipeline"/>
+          <script id="levelinfo"/>
+          <script id="dclickesctoquit"/>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id ="fpstext" Name="fpstext">
+      <Components>
+        <Component Type ="Transform"/>
+        <Component Type="Text">
+          <maxlength>10</maxlength>
+        </Component>
+        <Component Type="GraphicsComposition">
+          <material id="guitext0">
+          </material>
+        </Component>
+        <Component Type="ScriptComponent">
+          <script id="fpstext"/>
+        </Component>
+      </Components>
+    </Archetype>
+        
+    <Archetype id ="text">
+      <Components>
+        <Component Type ="Transform"/>
+        <Component Type="Text">
+          <maxlength>20</maxlength>
+        </Component>
+        <Component Type="GraphicsComposition">
+          <material id="guitext0">
+          </material>
+        </Component>
+      </Components>
+    </Archetype>
+
+  </Archetypes>	
+</root>

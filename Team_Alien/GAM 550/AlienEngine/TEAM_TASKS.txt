@@ -1,0 +1,33 @@
+TASKS
+------------------------------
+*****Santosh*****
+1. Release mode crash bug
+2. Reload crash
+3. Menu options:
+	a. Resolution( 1280x720, 1920x1080, 1024x768 )
+	b. Antialiasing( on/off )
+	c. Vsyinc( on/off )
+	d. Windowed mode( on/off )
+4. Convert winkey input to small letters
+-------------------------------
+*****Bill*****
+1. Show that the field stops time
+2. Show that one cube can exist
+3. Checkpoints
+4. Finish the tutorial
+5. Make the things with the lasers smaller
+6. Make first button bigger duration
+7. Put white at end level
+-------------------------------
+*****Ralph*****
+1. Logo( digipen logo and game logo )
+2. Add Jeremy to the video credits
+3. Initialize graphics when the resolution changes
+4. Different List For Forward Render
+-------------------------------
+*****Sree Harsha*****
+1. Audio
+-------------------------------
+
+
+

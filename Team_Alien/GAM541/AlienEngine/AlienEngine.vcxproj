@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8AAAE19C-9805-4DC8-85B7-DAF7762252FC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AlienEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dxerr.lib;d3d10.lib;d3dx10.lib;fmodex_vc.lib;d3d10.lib;d3dx10.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>dxerr.lib;d3d10.lib;d3dx10.lib;fmodex_vc.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ActivateObject.cpp" />
+    <ClCompile Include="source\AI_Type1.cpp" />
+    <ClCompile Include="source\AI_Type2.cpp" />
+    <ClCompile Include="source\animation.cpp" />
+    <ClCompile Include="source\Archetype.cpp" />
+    <ClCompile Include="source\Audio.cpp" />
+    <ClCompile Include="source\BasicLevels.cpp" />
+    <ClCompile Include="source\bossAnimationEffect.cpp" />
+    <ClCompile Include="source\bossFacialEffect.cpp" />
+    <ClCompile Include="source\bossMovementEffect.cpp" />
+    <ClCompile Include="source\CameraControl.cpp" />
+    <ClCompile Include="source\CheckPoints.cpp" />
+    <ClCompile Include="source\ComponentRegistration.cpp" />
+    <ClCompile Include="source\endGameActions.cpp" />
+    <ClCompile Include="source\enemyAnimationEffect.cpp" />
+    <ClCompile Include="source\enemyFacialEffect.cpp" />
+    <ClCompile Include="source\GSM.cpp" />
+    <ClCompile Include="source\heroAnimationEffect.cpp" />
+    <ClCompile Include="source\heroFacialEffect.cpp" />
+    <ClCompile Include="source\HeroProperties.cpp" />
+    <ClCompile Include="source\instructionLogic.cpp" />
+    <ClCompile Include="source\InteractiveObjProperties.cpp" />
+    <ClCompile Include="source\LevelEditor.cpp" />
+    <ClCompile Include="source\Level_1.cpp" />
+    <ClCompile Include="source\Level_2.cpp" />
+    <ClCompile Include="source\LoadLevelClass.cpp" />
+    <ClCompile Include="source\menuSystem.cpp" />
+    <ClCompile Include="source\ParticleSystem.cpp" />
+    <ClCompile Include="source\PEClouds.cpp" />
+    <ClCompile Include="source\PEEnergyField.cpp" />
+    <ClCompile Include="source\PELaser.cpp" />
+    <ClCompile Include="source\PESquare.cpp" />
+    <ClCompile Include="source\basicMovementEffect.cpp" />
+    <ClCompile Include="source\rippleEffect.cpp" />
+    <ClCompile Include="source\scene.cpp" />
+    <ClCompile Include="source\scriptRegistrator.cpp" />
+    <ClCompile Include="source\skyline.cpp" />
+    <ClCompile Include="source\Body.cpp" />
+    <ClCompile Include="source\Camera.cpp" />
+    <ClCompile Include="source\colladaReader.cpp" />
+    <ClCompile Include="source\Collision.cpp" />
+    <ClCompile Include="source\Composition.cpp" />
+    <ClCompile Include="source\Core.cpp" />
+    <ClCompile Include="source\D3DManager.cpp" />
+    <ClCompile Include="source\DebugDraw.cpp" />
+    <ClCompile Include="source\debugGeometry.cpp" />
+    <ClCompile Include="source\DebugPrint.cpp" />
+    <ClCompile Include="source\DebugTools.cpp" />
+    <ClCompile Include="source\Factory.cpp" />
+    <ClCompile Include="source\FilePath.cpp" />
+    <ClCompile Include="source\font.cpp" />
+    <ClCompile Include="source\GameData.cpp" />
+    <ClCompile Include="source\GameLogic.cpp" />
+    <ClCompile Include="source\Graphics.cpp" />
+    <ClCompile Include="source\grass.cpp" />
+    <ClCompile Include="source\Mesh.cpp" />
+    <ClCompile Include="source\meshInstance.cpp" />
+    <ClCompile Include="source\particleEmitter.cpp" />
+    <ClCompile Include="source\Physics.cpp" />
+    <ClCompile Include="source\Precompiled.cpp" />
+    <ClCompile Include="source\rays.cpp" />
+    <ClCompile Include="source\renderTargetTexture.cpp" />
+    <ClCompile Include="source\Resolution.cpp" />
+    <ClCompile Include="source\shader.cpp" />
+    <ClCompile Include="source\StoreMessage.cpp" />
+    <ClCompile Include="source\texture.cpp" />
+    <ClCompile Include="source\texturedbox.cpp" />
+    <ClCompile Include="source\Sprite.cpp" />
+    <ClCompile Include="source\TextSerialization.cpp" />
+    <ClCompile Include="source\spikes.cpp" />
+    <ClCompile Include="source\Transform.cpp" />
+    <ClCompile Include="source\Utility.cpp" />
+    <ClCompile Include="source\scriptManager.cpp" />
+    <ClCompile Include="source\visualPlatform.cpp" />
+    <ClCompile Include="source\water.cpp" />
+    <ClCompile Include="source\WindowsSystem.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\XMLSerialization.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Shaders\Fxaa3_11.h" />
+    <ClInclude Include="source\ActivateObject.h" />
+    <ClInclude Include="source\AI_Type1.h" />
+    <ClInclude Include="source\AI_Type2.h" />
+    <ClInclude Include="source\animation.h" />
+    <ClInclude Include="source\Archetype.h" />
+    <ClInclude Include="source\Audio.h" />
+    <ClInclude Include="source\BasicLevels.h" />
+    <ClInclude Include="source\bossAnimationEffect.h" />
+    <ClInclude Include="source\bossFacialEffect.h" />
+    <ClInclude Include="source\bossMovementEffect.h" />
+    <ClInclude Include="source\CameraControl.h" />
+    <ClInclude Include="source\CheckPoints.h" />
+    <ClInclude Include="source\ComponentRegistration.h" />
+    <ClInclude Include="source\endGameActions.h" />
+    <ClInclude Include="source\enemyAnimationEffect.h" />
+    <ClInclude Include="source\enemyFacialEffect.h" />
+    <ClInclude Include="source\GSM.h" />
+    <ClInclude Include="source\heroAnimationEffect.h" />
+    <ClInclude Include="source\heroFacialEffect.h" />
+    <ClInclude Include="source\HeroProperties.h" />
+    <ClInclude Include="source\ILevel.h" />
+    <ClInclude Include="source\instructionLogic.h" />
+    <ClInclude Include="source\InteractiveObjProperties.h" />
+    <ClInclude Include="source\LevelEditor.h" />
+    <ClInclude Include="source\Level_1.h" />
+    <ClInclude Include="source\Level_2.h" />
+    <ClInclude Include="source\LoadLevelClass.h" />
+    <ClInclude Include="source\menuSystem.h" />
+    <ClInclude Include="source\ParticleSystem.h" />
+    <ClInclude Include="source\PEClouds.h" />
+    <ClInclude Include="source\PEEnergyField.h" />
+    <ClInclude Include="source\PELaser.h" />
+    <ClInclude Include="source\PESquare.h" />
+    <ClInclude Include="source\basicMovementEffect.h" />
+    <ClInclude Include="source\rippleEffect.h" />
+    <ClInclude Include="source\scriptCreator.h" />
+    <ClInclude Include="source\scriptRegistrator.h" />
+    <ClInclude Include="source\skyline.h" />
+    <ClInclude Include="source\binaryIO.h" />
+    <ClInclude Include="source\Body.h" />
+    <ClInclude Include="source\Camera.h" />
+    <ClInclude Include="source\colladaReader.h" />
+    <ClInclude Include="source\Collision.h" />
+    <ClInclude Include="source\Component.h" />
+    <ClInclude Include="source\ComponentCreator.h" />
+    <ClInclude Include="source\ComponentTypeIds.h" />
+    <ClInclude Include="source\Composition.h" />
+    <ClInclude Include="source\Containers.h" />
+    <ClInclude Include="source\Core.h" />
+    <ClInclude Include="source\D3DManager.h" />
+    <ClInclude Include="source\DebugDiagnostic.h" />
+    <ClInclude Include="source\DebugDraw.h" />
+    <ClInclude Include="source\debugGeometry.h" />
+    <ClInclude Include="source\DebugPrint.h" />
+    <ClInclude Include="source\DebugTools.h" />
+    <ClInclude Include="source\DirectXIncludes.h" />
+    <ClInclude Include="source\Engine.h" />
+    <ClInclude Include="source\Factory.h" />
+    <ClInclude Include="source\FilePath.h" />
+    <ClInclude Include="source\font.h" />
+    <ClInclude Include="source\GameData.h" />
+    <ClInclude Include="source\GameLogic.h" />
+    <ClInclude Include="source\Graphics.h" />
+    <ClInclude Include="source\grass.h" />
+    <ClInclude Include="source\material.h" />
+    <ClInclude Include="source\Mesh.h" />
+    <ClInclude Include="source\MeshInstance.h" />
+    <ClInclude Include="source\Message.h" />
+    <ClInclude Include="source\ObjectLinkedList.h" />
+    <ClInclude Include="source\particleEmitter.h" />
+    <ClInclude Include="source\Physics.h" />
+    <ClInclude Include="source\Precompiled.h" />
+    <ClInclude Include="source\rapidxml.hpp" />
+    <ClInclude Include="source\rapidxml_iterators.hpp" />
+    <ClInclude Include="source\rapidxml_print.hpp" />
+    <ClInclude Include="source\rapidxml_utils.hpp" />
+    <ClInclude Include="source\rays.h" />
+    <ClInclude Include="source\renderTargetTexture.h" />
+    <ClInclude Include="source\Resolution.h" />
+    <ClInclude Include="source\scene.h" />
+    <ClInclude Include="source\Serialization.h" />
+    <ClInclude Include="source\shader.h" />
+    <ClInclude Include="source\StoreMessage.h" />
+    <ClInclude Include="source\texture.h" />
+    <ClInclude Include="source\texturedbox.h" />
+    <ClInclude Include="source\Sprite.h" />
+    <ClInclude Include="source\System.h" />
+    <ClInclude Include="source\text.h" />
+    <ClInclude Include="source\TextSerialization.h" />
+    <ClInclude Include="source\spikes.h" />
+    <ClInclude Include="source\Transform.h" />
+    <ClInclude Include="source\Utility.h" />
+    <ClInclude Include="source\VertexTypes.h" />
+    <ClInclude Include="source\script.h" />
+    <ClInclude Include="source\scriptManager.h" />
+    <ClInclude Include="source\visualPlatform.h" />
+    <ClInclude Include="source\VMath.h" />
+    <ClInclude Include="source\water.h" />
+    <ClInclude Include="source\WindowsIncludes.h" />
+    <ClInclude Include="source\WindowsSystem.h" />
+    <ClInclude Include="source\XMLSerialization.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\GraphicsAssets.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assets\models\boss.md5mesh" />
+    <None Include="Assets\models\boss.standing.md5anim" />
+    <None Include="Assets\models\boss.walking.md5anim" />
+    <None Include="Assets\models\enemy.md5mesh" />
+    <None Include="Assets\models\enemy.standing.md5anim" />
+    <None Include="Assets\models\enemy.walking.md5anim" />
+    <None Include="Assets\models\hero.md5mesh" />
+    <None Include="Assets\models\hero.standing.md5anim" />
+    <None Include="Assets\models\hero.walking.md5anim" />
+    <None Include="Assets\models\pillar.dae">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assets\scenes\sunny_land.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assets\textures\icon.ico" />
+    <None Include="Objects\CheckPoints.xml" />
+    <None Include="Objects\gameSettings.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Objects\Level_0.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Objects\pause_menu.xml" />
+    <None Include="Objects\SmartCamera.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Shaders\advanceCursor.fx" />
+    <None Include="Shaders\advanceMenu.fx" />
+    <None Include="Shaders\advanceParticlesClouds.fx" />
+    <None Include="Shaders\advanceParticlesEnergyField.fx" />
+    <None Include="Shaders\advanceParticlesLaser.fx" />
+    <None Include="Shaders\advanceParticlesSquare.fx" />
+    <None Include="Shaders\bloomShader.fx" />
+    <None Include="Shaders\blurShader.fx" />
+    <None Include="Shaders\cursorShader.fx" />
+    <None Include="Shaders\menuShader.fx" />
+    <None Include="Shaders\particleShaderClouds.fx" />
+    <None Include="Shaders\particleShaderEnergyField.fx" />
+    <None Include="Shaders\particleShaderLaser.fx" />
+    <None Include="Shaders\skylineShader.fx" />
+    <None Include="Shaders\debugShader.fx" />
+    <None Include="Shaders\bloomPickShader.fx" />
+    <None Include="Shaders\fontShader.fx" />
+    <None Include="Shaders\FXAAShader.fx" />
+    <None Include="Shaders\grassShader.fx" />
+    <None Include="Shaders\particleShaderSquare.fx" />
+    <None Include="Shaders\postProcessingShader.fx" />
+    <None Include="Shaders\SpriteShader.fx" />
+    <None Include="Shaders\states.fxh" />
+    <None Include="Shaders\MeshShader.fx" />
+    <None Include="Shaders\StaticMeshShader.fx" />
+    <None Include="Shaders\texturedBoxShader.fx" />
+    <None Include="Shaders\spikesShader.fx" />
+    <None Include="Shaders\waterShader.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AlienEngine.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

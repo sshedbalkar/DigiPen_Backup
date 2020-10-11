@@ -1,0 +1,152 @@
+#include "Precompiled.h"
+#include "LogicCollisionResolve.h"
+#include "Physics.h"
+#include "Hero.h"
+#include "GameLogic.h"
+#include "ActivationProperties.h"
+#include "DominoComponent.h"
+#include "Dying.h"
+#include "TimeMechanicManager.h"
+#include "LightComponent.h"
+#include "ModelComponent.h"
+#include "Hero.h"
+
+
+namespace Framework
+{
+
+
+	LogicCollisionResolve::LogicCollisionResolve()
+	{
+	}
+
+	void LogicCollisionResolve::SendMessage(Message *m)
+	{
+
+		switch( m->MessageId )
+		{
+
+		case Mid::Collide:
+		{
+			MessageCollide * msg = (MessageCollide*)m;
+			if(msg->CollideObject->CompositionTypeId==GOC_Type_Hero)
+			{
+				HERO->collisionNormal=msg->ContactNormal;
+			}
+
+			if (msg->CollidedWith && msg->CollidedWith ->CompositionTypeId==GOC_Type_Conv_Belt &&  msg->CollidedWith->has(ActivationProperties)->IsActivated())
+			{
+				if(msg->CollideObject->CompositionTypeId==GOC_Type_Hero)
+					msg->CollideObject->has(RigidBody)->setVelocity(msg->CollideObject->has(RigidBody)->getVelocity() + Vector3(0,0,-2));
+				else
+					msg->CollideObject->has(RigidBody)->setVelocity(Vector3(0,0,-2));
+			}
+
+			if (msg->CollidedWith  && msg->CollidedWith ->CompositionTypeId==GOC_Type_Destroyer && msg->CollideObject ->has(Dying)  )
+			{
+				POWERGUN->gravityGun.ActionIfPickedItemDestroyed(msg->CollideObject);
+				msg->CollideObject->has(Dying)->MarkAsDying();
+			}
+			if (msg->CollidedWith  && msg->CollidedWith ->CompositionTypeId==GOC_Type_Destroyer && msg->CollideObject ->CompositionTypeId==GOC_Type_Hero  )
+			{
+				HERO-> ResetHeroPos();
+			}
+			if (msg->CollidedWith  && msg->CollidedWith ->CompositionTypeId==GOC_Type_ExitLevelBox && msg->CollideObject ->CompositionTypeId==GOC_Type_Hero  )
+			{
+				if(LOGIC->GetLevelId()==2)
+				{
+					LOGIC->SetLevelId(0);
+					LOGIC->ResetLevel();
+					GRAPHICS->RollCredits() ;
+				}
+				else
+				{
+					LOGIC->LoadNextLevel();
+
+				}
+			}
+			if (msg->CollidedWith  && msg->CollidedWith ->CompositionTypeId==GOC_Type_Button2 &&  msg->CollideObject ->CompositionTypeId==GOC_Type_Hero )
+			{
+				if(msg->CollidedWith->has(ActivationProperties)->GetCurrentActivationTime()==0.0f || msg->CollidedWith->has(ActivationProperties)->CheckIfActivationTimerIsOver())
+				{
+					msg->CollidedWith->has(ActivationProperties)->MarkAsActivated(true);
+					//if(TIMEMANAGER->GetTimeState()!=TIME_NORMAL)
+					//{
+					msg->CollidedWith->has(ActivationProperties)->SetForceNextFrameActivation(true);
+				}
+			}
+			if (msg->CollideObject ->CompositionTypeId==GOC_Type_Button1 || msg->CollideObject->CompositionTypeId ==GOC_Type_Button2 || msg->CollideObject->CompositionTypeId ==GOC_Type_Button3 || msg->CollideObject ->CompositionTypeId==GOC_Type_VerticalSlider ||  msg->CollideObject ->CompositionTypeId==GOC_Type_RotatingSlider )
+			{
+				msg->CollideObject->has(ActivationProperties)->Activate(msg->CollidedWith);//do not allow sleeping
+			}
+			if (msg->CollideObject ->CompositionTypeId==GOC_Type_Button1 || msg->CollideObject->CompositionTypeId ==GOC_Type_Button2 ||msg->CollideObject->CompositionTypeId ==GOC_Type_Button3  )
+			{
+				if(msg->CollidedWith->has(Dying))
+				{
+					if(msg->CollidedWith->has(Dying)->GetIsDying())
+					{
+						msg->CollideObject->has(RigidBody)->isColliding=false; //if the cube is dying do not make button activate
+					}
+				}
+				
+			}
+			if ( msg->CollideObject ->CompositionTypeId==GOC_Type_Domino)
+			{
+				//msg->CollideObject->has(Domino)->MarkAsActive();	
+			}
+			if ( msg->CollidedWith && msg->CollideObject ->CompositionTypeId==GOC_Type_BridgeRigid && msg->CollidedWith->CompositionTypeId == GOC_Type_VerticalSlider)
+			{
+				msg->CollideObject->has(RigidBody)->setAwake(false); //do not allow sleeping
+			}
+			if ( msg->CollidedWith && msg->CollideObject ->CompositionTypeId==GOC_Type_BridgeRigid && msg->CollidedWith->CompositionTypeId == GOC_Type_Rope)
+			{
+				msg->CollidedWith->has(Dying)->MarkAsDying();
+			}
+			if (  msg->CollideObject ->CompositionTypeId==GOC_Type_CanonBall && msg->CollidedWith && (msg->CollidedWith->CompositionTypeId == GOC_Type_Floor ||msg->CollidedWith->CompositionTypeId == GOC_Type_Wall || msg->CollidedWith->CompositionTypeId == GOC_Type_Domino))
+			{
+				msg->CollideObject->has(Dying)->MarkAsDying();
+			}
+			/*if (  msg->CollideObject ->CompositionTypeId==GOC_Type_LightBulbWithMass && msg->CollidedWith)
+			{
+				GRAPHICS->DeferredLights[msg->CollideObject->has(LightComponent)->GetIndex()].Position = msg->CollideObject->has(Transform)->Position;
+				GRAPHICS->CreateLightBuffer();
+			}*/
+			
+
+
+			//HACKS FOR TUTORIAL LEVEL 1
+			if(LOGIC->GetLevelId()==0)
+			{
+				if (!POWERGUN->IsActivated && msg->CollidedWith && msg->CollideObject ->CompositionTypeId==GOC_Type_Hero &&  msg->CollidedWith->CompositionTypeId ==GOC_Type_PillarForGun)
+				{
+					msg->CollidedWith->has(ActivationProperties)->MarkAsActivated(true);
+					HERO->GetHero()->has(ModelComponent)->SwapTexture();
+					POWERGUN->IsActivated=true;
+					//msg->CollidedWith->Destroy();
+				}
+				
+
+			}
+			//HACKS FOR  LEVEL 4
+			if(LOGIC->GetLevelId()==3)
+			{
+
+			}
+
+			
+			break;
+		}				
+
+		}
+	}
+
+	void LogicCollisionResolve::Initialize()
+	{//when we change or restart level
+	}
+
+
+	void LogicCollisionResolve::Update(float & dt)
+	{
+	}
+
+}

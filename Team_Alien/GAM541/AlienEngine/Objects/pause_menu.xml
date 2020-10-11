@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <component type="button">
+    <x>0.91</x>
+    <y>0.5</y>
+    <width>0.08</width>
+    <height>0.0625</height>
+    <event>resume</event>
+  </component>
+  <component type="button">
+    <x>0.91</x>
+    <y>0.417</y>
+    <width>0.08</width>
+    <height>0.0625</height>
+    <event>restart</event>
+  </component>
+  <component type="button">
+    <x>0.91</x>
+    <y>0.33</y>
+    <width>0.08</width>
+    <height>0.0625</height>
+    <event>quit</event>
+  </component>
+
+</root>

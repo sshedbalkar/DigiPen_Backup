@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Archetypes>
+		<Archetype id ="GOC_Type_WallforLava">
+		  <Components>
+			<Component Type ="Transform">
+        <Scale>1,1,1</Scale>
+      </Component>
+      <Component Type ="CollisionBox">
+			  <HalfSize>0.5,0.5,0.5</HalfSize>
+			</Component>
+			<Component Type ="ModelComponent">
+			  <ModelName>cube</ModelName>
+        <TextureName>lavawall</TextureName>
+        
+        <Alpha>0.5</Alpha>
+        <TexMultiplier>4</TexMultiplier>
+        	</Component>
+			
+      		   </Components>
+		</Archetype>
+	</Archetypes>	
+</root>

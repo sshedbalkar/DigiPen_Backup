@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Archetypes>
+		<Archetype id ="GOC_Type_PillarForButtonTest">
+		  <Components>
+        <Component Type ="Transform">
+          <Scale>1,1,1</Scale>
+        </Component>
+
+        <Component Type ="CollisionCylinder">
+          <Radius>0.5</Radius>
+          <Height>1.0</Height>
+        </Component>
+
+        <!--<Component Type ="CollisionBox">
+          <HalfSize>0.5,0.5,0.5</HalfSize>
+        </Component>-->
+  
+        <Component Type ="ModelComponent">
+          <ModelName>cylinder</ModelName>
+          <TextureName>ice</TextureName>
+          <Alpha>0.4</Alpha>
+          <TexMultiplier>4</TexMultiplier>
+        </Component>
+
+      
+        <Component Type="ActivationProperties">
+          <ResetOnLoad>0</ResetOnLoad>
+        </Component>
+		   </Components>
+		</Archetype>
+	</Archetypes>	
+</root>

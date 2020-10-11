@@ -1,0 +1,116 @@
+﻿Build started 10/21/2012 7:46:35 PM.
+     1>Project "E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550\AlienEngine\AlienEngine.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\AlienEngine.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ILevelEditor\source /ILua\References\luabind\include /ILua\References\lua\include /ILua\References\boost\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source\ScriptEngine.cpp
+         ScriptEngine.cpp
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550\AlienEngine\Debug\AlienEngine.exe" /INCREMENTAL /NOLOGO /LIBPATH:"Lua\References\luabind\msvc-10.0-x86" /LIBPATH:"Lua\References\lua\msvc-10.0-x86" dxgi.lib dxerr.lib d3d11.lib d3dx10.lib d3dx11.lib fmodex_vc.lib winmm.lib lua.Debug.lib luabind.Debug.lib AntTweakBar.lib AntTweakBar64.lib LevelEditor_Debug.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\AlienEngine.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550\AlienEngine\Debug\AlienEngine.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550\AlienEngine\Debug\AlienEngine.lib" /MACHINE:X86 Debug\AlienEngine.res
+         Debug\AlienEngine.exe.embed.manifest.res
+         Debug\ActivationProperties.obj
+         Debug\alphamapshaderclass.obj
+         Debug\AnimateShaderClass.obj
+         Debug\Animation.obj
+         Debug\Archetype.obj
+         Debug\Audio.obj
+         Debug\BasicLevels.obj
+         Debug\bitmapclass.obj
+         Debug\BoomBoom.obj
+         Debug\bumpmapshaderclass.obj
+         Debug\cameraclass.obj
+         Debug\clipplaneshaderclass.obj
+         Debug\Collisions.obj
+         Debug\colorshaderclass.obj
+         Debug\Connector.obj
+         Debug\Contacts.obj
+         Debug\CTestClass1.obj
+         Debug\d3dclass.obj
+         Debug\DebugDraw.obj
+         Debug\debugGeometry.obj
+         Debug\DebugPrint.obj
+         Debug\DebugTools.obj
+         Debug\debugwindowclass.obj
+         Debug\fadeshaderclass.obj
+         Debug\FileRW.obj
+         Debug\fogshaderclass.obj
+         Debug\fontclass.obj
+         Debug\fontshaderclass.obj
+         Debug\ForceGenerator.obj
+         Debug\frustumclass.obj
+         Debug\GraphicsAssetsLoader.obj
+         Debug\GSM.obj
+         Debug\Level_1.obj
+         Debug\Level_2.obj
+         Debug\lightclass.obj
+         Debug\lightmapshaderclass.obj
+         Debug\lightshaderclass.obj
+         "Debug\LineDrawer .obj"
+         Debug\LoadLevelClass.obj
+         Debug\Body.obj
+         Debug\Collision.obj
+         Debug\Composition.obj
+         Debug\Core.obj
+         Debug\Factory.obj
+         Debug\FilePath.obj
+         Debug\GameData.obj
+         Debug\GameLogic.obj
+         Debug\Graphics.obj
+         Debug\LuaLibrary.obj
+         Debug\Magnet.obj
+         Debug\Matrix3.obj
+         Debug\Matrix4.obj
+         Debug\Mesh.obj
+         Debug\Model.obj
+         Debug\modelclass.obj
+         Debug\ModelComponent2.obj
+         Debug\multitextureshaderclass.obj
+         Debug\ObjectActivator.obj
+         Debug\Particle.obj
+         Debug\ParticleContacts.obj
+         Debug\ParticleForceGenerator.obj
+         Debug\ParticleLinks.obj
+         Debug\ParticleWorld.obj
+         Debug\Physics.obj
+         Debug\PowerGun.obj
+         Debug\Precompiled.obj
+         Debug\Quaternion.obj
+         Debug\rendertexturebitmapclass.obj
+         Debug\rendertextureclass.obj
+         Debug\Resolution.obj
+         Debug\RigidBody.obj
+         Debug\SaveLevelClass.obj
+         Debug\ScriptComponent.obj
+         Debug\ScriptEngine.obj
+         Debug\specmapshaderclass.obj
+         Debug\StoreMessage.obj
+         Debug\textclass.obj
+         Debug\TextSerialization.obj
+         Debug\texturearrayclass.obj
+         Debug\timerclass.obj
+         Debug\Transform.obj
+         Debug\transparentshaderclass.obj
+         Debug\Utility.obj
+         Debug\Vector3.obj
+         Debug\ModelComponent.obj
+         Debug\WindowsSystem.obj
+         Debug\main.obj
+         Debug\XMLSerialization.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\AlienEngine.exe.embed.manifest" /manifest Debug\AlienEngine.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         AlienEngine.vcxproj -> E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550\AlienEngine\Debug\AlienEngine.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\AlienEngine.unsuccessfulbuild".
+         Touching "Debug\AlienEngine.lastbuildstate".
+     1>Done Building Project "E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550\AlienEngine\AlienEngine.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.03

@@ -1,0 +1,123 @@
+﻿Build started 10/21/2012 5:53:49 PM.
+     1>Project "E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550\AlienEngine\LevelEditor\LevelEditor.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\LevelEditor.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550\AlienEngine\source" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source\Axis.cpp source\LevelEditor.cpp source\EditorFunctionality.cpp source\Polynomial.cc source\Torus.cpp source\TweakBarControl.cpp source\TweakBarManager.cpp
+         TweakBarManager.cpp
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(29): warning C4482: nonstandard extension used: enum 'Framework::TweakBarManager::MyEnum' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(41): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(65): warning C4482: nonstandard extension used: enum 'Framework::TweakBarManager::MyEnum' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(99): warning C4482: nonstandard extension used: enum 'Framework::TweakBarManager::MyEnum' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(135): warning C4244: 'argument' : conversion from 'Framework::real' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(135): warning C4244: 'argument' : conversion from 'Framework::real' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(135): warning C4244: 'argument' : conversion from 'Framework::real' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(148): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(156): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(164): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(200): warning C4482: nonstandard extension used: enum 'Framework::TweakBarManager::MyEnum' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(205): warning C4482: nonstandard extension used: enum 'Framework::TweakBarManager::MyEnum' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(241): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(246): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(267): warning C4482: nonstandard extension used: enum 'Framework::TweakBarManager::MyEnum' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(269): warning C4482: nonstandard extension used: enum 'Framework::TweakBarManager::MyEnum' used in qualified name
+         TweakBarControl.cpp
+         Torus.cpp
+         Polynomial.cc
+         EditorFunctionality.cpp
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(28): warning C4101: 'sidex' : unreferenced local variable
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(28): warning C4101: 'dy' : unreferenced local variable
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(28): warning C4101: 'sidey' : unreferenced local variable
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(28): warning C4101: 'dx' : unreferenced local variable
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(93): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(104): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(83): warning C4101: 'detect' : unreferenced local variable
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(128): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(132): warning C4482: nonstandard extension used: enum 'Framework::CollisionPrimitive::ShapeId' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(141): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(154): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(157): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(161): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(165): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(169): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(172): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(182): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(186): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(192): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(198): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\editorfunctionality.cpp(205): warning C4018: '<' : signed/unsigned mismatch
+         LevelEditor.cpp
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(112): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(302): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(304): warning C4244: 'argument' : conversion from 'unsigned int' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(338): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(345): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(345): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(346): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(346): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(347): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(347): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(354): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(362): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(362): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(363): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(363): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(363): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(364): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(364): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(364): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(365): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(371): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(379): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(379): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(379): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(380): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(380): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(380): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(381): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(381): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(381): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(382): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(392): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(397): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(397): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(398): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(398): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(404): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(410): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(410): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(411): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(411): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(417): warning C4482: nonstandard extension used: enum 'Framework::Axis::AxisSelection' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(423): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(423): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(424): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(424): warning C4244: 'argument' : conversion from 'double' to 'FLOAT', possible loss of data
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(513): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\leveleditor.cpp(515): warning C4244: 'argument' : conversion from 'unsigned int' to 'FLOAT', possible loss of data
+         Axis.cpp
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\axis.cpp(58): warning C4101: 'detect' : unreferenced local variable
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\axis.cpp(115): warning C4482: nonstandard extension used: enum 'Framework::LevelEditor::EditorLevelState' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\axis.cpp(123): warning C4482: nonstandard extension used: enum 'Framework::LevelEditor::EditorLevelState' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\axis.cpp(131): warning C4482: nonstandard extension used: enum 'Framework::LevelEditor::EditorLevelState' used in qualified name
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\axis.cpp(136): warning C4482: nonstandard extension used: enum 'Framework::LevelEditor::EditorLevelState' used in qualified name
+         Generating Code...
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(262): warning C4715: 'Framework::TweakBarManager::GetStringFromEnum' : not all control paths return a value
+     1>e:\work_work\backup\svn\team\team_alien\gam 550\alienengine\leveleditor\source\tweakbarmanager.cpp(270): warning C4715: 'Framework::TweakBarManager::GetEnumFromString' : not all control paths return a value
+       Lib:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550\AlienEngine\LevelEditor_Debug.lib" /NOLOGO Debug\Axis.obj
+         Debug\LevelEditor.obj
+         Debug\EditorFunctionality.obj
+         Debug\Polynomial.obj
+         Debug\Torus.obj
+         Debug\TweakBarControl.obj
+         Debug\TweakBarManager.obj
+         LevelEditor.vcxproj -> E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550\AlienEngine\LevelEditor_Debug.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\LevelEditor.unsuccessfulbuild".
+         Touching "Debug\LevelEditor.lastbuildstate".
+     1>Done Building Project "E:\Work_Work\Backup\SVN\Team\Team_Alien\GAM 550\AlienEngine\LevelEditor\LevelEditor.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.09

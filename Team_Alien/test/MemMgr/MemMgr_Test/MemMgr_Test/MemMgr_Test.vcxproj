@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3E036AF6-6614-4862-B9A0-DA9774500701}</ProjectGuid>
+    <RootNamespace>MemMgr_Test</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\AllocatorRelease.cpp" />
+    <ClCompile Include="source\Block.cpp" />
+    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\MemAllocatorGen.cpp" />
+    <ClCompile Include="source\MemBank_FirstFit.cpp" />
+    <ClCompile Include="source\Allocator.cpp" />
+    <ClCompile Include="source\AllocatorDebug.cpp" />
+    <ClCompile Include="source\MemBank_Linear.cpp" />
+    <ClCompile Include="source\MemBank_Pooled.cpp" />
+    <ClCompile Include="source\Page.cpp" />
+    <ClCompile Include="source\Pool.cpp" />
+    <ClCompile Include="source\RawMemory.cpp" />
+    <ClCompile Include="source\TestClass1.cpp" />
+    <ClCompile Include="source\MemUtility.cpp" />
+    <ClCompile Include="source\Tracker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\AllocatorRelease.h" />
+    <ClInclude Include="source\Block.h" />
+    <ClInclude Include="source\mallocator.hpp" />
+    <ClInclude Include="source\MemAllocatorGen.h" />
+    <ClInclude Include="source\MemBank.h" />
+    <ClInclude Include="source\MemBank_FirstFit.h" />
+    <ClInclude Include="source\MemBank_Linear.h" />
+    <ClInclude Include="source\MemBank_Pooled.h" />
+    <ClInclude Include="source\MemDefines.h" />
+    <ClInclude Include="source\Allocator.h" />
+    <ClInclude Include="source\AllocatorDebug.h" />
+    <ClInclude Include="source\Page.h" />
+    <ClInclude Include="source\Pool.h" />
+    <ClInclude Include="source\RawMemory.h" />
+    <ClInclude Include="source\TestClass1.h" />
+    <ClInclude Include="source\MemUtility.h" />
+    <ClInclude Include="source\Tracker.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

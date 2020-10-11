@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Archetypes>
+		<Archetype id ="GOC_Type_GROUNDTEXTURE">
+		  <Components>
+			<Component Type ="Transform"/>
+			<Component Type ="ModelComponent">
+			  <ModelName>square</ModelName>
+			</Component>
+		  </Components>
+		</Archetype>
+	</Archetypes>	
+</root>
